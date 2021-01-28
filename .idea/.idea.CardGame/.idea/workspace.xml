@@ -25,13 +25,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d25d63e9-956f-4e76-8489-a01cbb5329ef" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/ValZay.CardGame/Scripts/LevelLoad.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/ValZay.CardGame/Scripts/SafeAreaHeader.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/ValZay.CardGame/Scripts/SafeAreaHeader.cs.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.CardGame/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.CardGame/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.CardGame/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.CardGame/.idea/indexLayout.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.CardGame/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.CardGame/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ValZay.CardGame/Scenes/SampleScene.unity" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ValZay.CardGame/Scenes/SampleScene.unity.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ValZay.CardGame/Images/Table/table.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ValZay.CardGame/Images/Table/table.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ValZay.CardGame/Scenes/Level.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ValZay.CardGame/Scenes/Level.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/manifest.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/packages-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/packages-lock.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,7 +44,9 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/4AF5BEA1-B7B2-4424-94FD-73F6F9B3D7F4/29/1f4adebd/Canvas.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/ValZay.CardGame/Scripts/LevelLoad.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/CrystalFramework/Utility/SafeArea.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -50,6 +54,8 @@
         <option value="$PROJECT_DIR$/Assets/ValZay.CardGame/Scripts/Level.cs" />
         <option value="$PROJECT_DIR$/Assets/ValZay.CardGame/Scripts/LevelLoader.cs" />
         <option value="$PROJECT_DIR$/Assets/ValZay.CardGame/Scripts/LevelLoad.cs" />
+        <option value="$PROJECT_DIR$/Assets/ValZay.CardGame/Scripts/SafeArea.cs" />
+        <option value="$PROJECT_DIR$/Assets/ValZay.CardGame/Scripts/SafeAreaHeader.cs" />
       </list>
     </option>
   </component>
@@ -94,7 +100,7 @@
       <option name="presentableId" value="Default" />
       <updated>1611721215184</updated>
       <workItem from="1611721226867" duration="1803000" />
-      <workItem from="1611809006249" duration="1093000" />
+      <workItem from="1611809006249" duration="7467000" />
     </task>
     <servers />
   </component>
