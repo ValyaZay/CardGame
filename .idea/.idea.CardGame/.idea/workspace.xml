@@ -25,15 +25,25 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d25d63e9-956f-4e76-8489-a01cbb5329ef" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/ValZay.CardGame/Scripts/SafeAreaHeader.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ValZay.CardGame/Scripts/SafeAreaHeader.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/ValZay.CardGame/Scripts/Header.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/ValZay.CardGame/Scripts/Header.cs.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.CardGame/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.CardGame/.idea/contentModel.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.CardGame/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.CardGame/.idea/indexLayout.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.CardGame/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.CardGame/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ValZay.CardGame/Images/Table/table.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ValZay.CardGame/Images/Table/table.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/CrystalFramework.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/CrystalFramework/Utility.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/CrystalFramework/Utility/Demos.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/CrystalFramework/Utility/Demos/SafeAreaDemo.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/CrystalFramework/Utility/Demos/SafeAreaDemo.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/CrystalFramework/Utility/Demos/SafeAreaDemo.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/CrystalFramework/Utility/Demos/SafeAreaDemo.txt.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/CrystalFramework/Utility/Demos/SafeAreaDemo.unity" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/CrystalFramework/Utility/Demos/SafeAreaDemo.unity.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/CrystalFramework/Utility/SafeArea.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/CrystalFramework/Utility/SafeArea.cs.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/ValZay.CardGame/Scenes/Level.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ValZay.CardGame/Scenes/Level.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Packages/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/manifest.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Packages/packages-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/packages-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ValZay.CardGame/Scripts/SafeArea.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ValZay.CardGame/Scripts/SafeArea.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ValZay.CardGame/Scripts/SafeAreaHeader.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ValZay.CardGame/Scripts/SafeAreaHeader.cs.meta" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,18 +54,24 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/../Protokit/protokit/src/protokit-games/Assets/Games/SantaKlava/Scripts/Keys/Key.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/4AF5BEA1-B7B2-4424-94FD-73F6F9B3D7F4/29/1f4adebd/Canvas.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/ValZay.CardGame/Scripts/LevelLoad.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/CrystalFramework/Utility/SafeArea.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/Assets/ValZay.CardGame/Scripts/Level.cs" />
         <option value="$PROJECT_DIR$/Assets/ValZay.CardGame/Scripts/LevelLoader.cs" />
-        <option value="$PROJECT_DIR$/Assets/ValZay.CardGame/Scripts/LevelLoad.cs" />
-        <option value="$PROJECT_DIR$/Assets/ValZay.CardGame/Scripts/SafeArea.cs" />
         <option value="$PROJECT_DIR$/Assets/ValZay.CardGame/Scripts/SafeAreaHeader.cs" />
+        <option value="$PROJECT_DIR$/Assets/ValZay.CardGame/Scripts/LevelLoad.cs" />
+        <option value="$PROJECT_DIR$/Assets/ValZay.CardGame/Shaders/HeaderStretch.shader" />
+        <option value="$PROJECT_DIR$/Assets/ValZay.CardGame/Scripts/StretchedHeader.cs" />
+        <option value="$PROJECT_DIR$/Assets/ValZay.CardGame/Scripts/GameHeader.cs" />
+        <option value="$PROJECT_DIR$/Assets/ValZay.CardGame/Scripts/SafeArea.cs" />
+        <option value="$PROJECT_DIR$/Assets/ValZay.CardGame/Scripts/Header.cs" />
       </list>
     </option>
   </component>
@@ -66,6 +82,8 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="DebuggerViewTab_PTCS_FirstProportionKey" value="0.34994584" />
+    <property name="DebuggerViewTab_PTCS_LastProportionKey" value="0.30010834" />
     <property name="Discover.Launch.Via.Unity" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
@@ -81,10 +99,10 @@
       </option>
       <method v="2" />
     </configuration>
-    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
+    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" ignored-value-for-modified-check="77436">
       <option name="allowRunningInParallel" value="false" />
       <option name="listenPortForConnections" value="false" />
-      <option name="pid" />
+      <option name="pid" value="77436" />
       <option name="selectedOptions">
         <set />
       </option>
@@ -100,7 +118,7 @@
       <option name="presentableId" value="Default" />
       <updated>1611721215184</updated>
       <workItem from="1611721226867" duration="1803000" />
-      <workItem from="1611809006249" duration="7467000" />
+      <workItem from="1611809006249" duration="20501000" />
     </task>
     <servers />
   </component>
@@ -122,5 +140,111 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="-1368" y="332" width="692" height="592" key="#xdebugger.evaluate" timestamp="1611838950269">
+      <screen x="-1920" y="80" width="1920" height="1040" />
+    </state>
+    <state x="-1368" y="332" width="692" height="592" key="#xdebugger.evaluate/0.0.1536.824/-1920.80.1920.1040@-1920.80.1920.1040" timestamp="1611838950269" />
+    <state width="933" height="464" key="DebuggerActiveHint" timestamp="1611837646892">
+      <screen x="-1920" y="80" width="1920" height="1040" />
+    </state>
+    <state width="933" height="464" key="DebuggerActiveHint/0.0.1536.824/-1920.80.1920.1040@-1920.80.1920.1040" timestamp="1611837646892" />
+    <state width="1877" height="231" key="GridCell.Tab.0.bottom" timestamp="1611840671699">
+      <screen x="-1920" y="80" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="231" key="GridCell.Tab.0.bottom/0.0.1536.824/-1920.80.1920.1040@-1920.80.1920.1040" timestamp="1611840671699" />
+    <state width="1877" height="231" key="GridCell.Tab.0.center" timestamp="1611840671699">
+      <screen x="-1920" y="80" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="231" key="GridCell.Tab.0.center/0.0.1536.824/-1920.80.1920.1040@-1920.80.1920.1040" timestamp="1611840671699" />
+    <state width="1877" height="231" key="GridCell.Tab.0.left" timestamp="1611840671698">
+      <screen x="-1920" y="80" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="231" key="GridCell.Tab.0.left/0.0.1536.824/-1920.80.1920.1040@-1920.80.1920.1040" timestamp="1611840671698" />
+    <state width="1877" height="231" key="GridCell.Tab.0.right" timestamp="1611840671699">
+      <screen x="-1920" y="80" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="231" key="GridCell.Tab.0.right/0.0.1536.824/-1920.80.1920.1040@-1920.80.1920.1040" timestamp="1611840671699" />
+    <state width="1877" height="231" key="GridCell.Tab.1.bottom" timestamp="1611840672359">
+      <screen x="-1920" y="80" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="231" key="GridCell.Tab.1.bottom/0.0.1536.824/-1920.80.1920.1040@-1920.80.1920.1040" timestamp="1611840672359" />
+    <state width="1877" height="231" key="GridCell.Tab.1.center" timestamp="1611840672359">
+      <screen x="-1920" y="80" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="231" key="GridCell.Tab.1.center/0.0.1536.824/-1920.80.1920.1040@-1920.80.1920.1040" timestamp="1611840672359" />
+    <state width="1877" height="231" key="GridCell.Tab.1.left" timestamp="1611840672359">
+      <screen x="-1920" y="80" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="231" key="GridCell.Tab.1.left/0.0.1536.824/-1920.80.1920.1040@-1920.80.1920.1040" timestamp="1611840672359" />
+    <state width="1877" height="231" key="GridCell.Tab.1.right" timestamp="1611840672359">
+      <screen x="-1920" y="80" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="231" key="GridCell.Tab.1.right/0.0.1536.824/-1920.80.1920.1040@-1920.80.1920.1040" timestamp="1611840672359" />
+    <state width="1877" height="231" key="GridCell.Tab.2.bottom" timestamp="1611840671461">
+      <screen x="-1920" y="80" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="231" key="GridCell.Tab.2.bottom/0.0.1536.824/-1920.80.1920.1040@-1920.80.1920.1040" timestamp="1611840671461" />
+    <state width="1877" height="231" key="GridCell.Tab.2.center" timestamp="1611840671461">
+      <screen x="-1920" y="80" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="231" key="GridCell.Tab.2.center/0.0.1536.824/-1920.80.1920.1040@-1920.80.1920.1040" timestamp="1611840671461" />
+    <state width="1877" height="231" key="GridCell.Tab.2.left" timestamp="1611840671461">
+      <screen x="-1920" y="80" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="231" key="GridCell.Tab.2.left/0.0.1536.824/-1920.80.1920.1040@-1920.80.1920.1040" timestamp="1611840671461" />
+    <state width="1877" height="231" key="GridCell.Tab.2.right" timestamp="1611840671461">
+      <screen x="-1920" y="80" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="231" key="GridCell.Tab.2.right/0.0.1536.824/-1920.80.1920.1040@-1920.80.1920.1040" timestamp="1611840671461" />
+    <state width="1877" height="231" key="GridCell.Tab.3.bottom" timestamp="1611840671462">
+      <screen x="-1920" y="80" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="231" key="GridCell.Tab.3.bottom/0.0.1536.824/-1920.80.1920.1040@-1920.80.1920.1040" timestamp="1611840671462" />
+    <state width="1877" height="231" key="GridCell.Tab.3.center" timestamp="1611840671462">
+      <screen x="-1920" y="80" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="231" key="GridCell.Tab.3.center/0.0.1536.824/-1920.80.1920.1040@-1920.80.1920.1040" timestamp="1611840671462" />
+    <state width="1877" height="231" key="GridCell.Tab.3.left" timestamp="1611840671462">
+      <screen x="-1920" y="80" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="231" key="GridCell.Tab.3.left/0.0.1536.824/-1920.80.1920.1040@-1920.80.1920.1040" timestamp="1611840671462" />
+    <state width="1877" height="231" key="GridCell.Tab.3.right" timestamp="1611840671462">
+      <screen x="-1920" y="80" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="231" key="GridCell.Tab.3.right/0.0.1536.824/-1920.80.1920.1040@-1920.80.1920.1040" timestamp="1611840671462" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Assets/ValZay.CardGame/Scripts/SafeArea.cs</url>
+          <line>44</line>
+          <properties documentPath="D:\UnityProjects\CardGame\Assets\ValZay.CardGame\Scripts\SafeArea.cs" initialLine="39">
+            <startOffsets>
+              <option value="1078" />
+            </startOffsets>
+            <endOffsets>
+              <option value="1079" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Assets/ValZay.CardGame/Scripts/SafeArea.cs</url>
+          <line>57</line>
+          <properties documentPath="D:\UnityProjects\CardGame\Assets\ValZay.CardGame\Scripts\SafeArea.cs" initialLine="59">
+            <startOffsets>
+              <option value="1459" />
+            </startOffsets>
+            <endOffsets>
+              <option value="1460" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="6" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
