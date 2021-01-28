@@ -8,6 +8,7 @@ namespace ValZay.CardGame
 {
     public class SafeArea : MonoBehaviour
     {
+        [SerializeField] private Canvas canvas;
         private RectTransform panelSafeArea;
         
         private void Awake()
@@ -35,9 +36,14 @@ namespace ValZay.CardGame
 
         private void ConvertPixelsToNormalizedCoordinate(Rect safeArea)
         {
+            Rect canvasArea = canvas.pixelRect;
+            if (safeArea.height > canvasArea.height)
+            {
+                safeArea.height = canvasArea.height;
+            }
+            
             Vector2 anchorMin = safeArea.position;
             Vector2 anchorMax = safeArea.position + safeArea.size;
-
 
             anchorMin.x /= Screen.width;
             anchorMin.y /= Screen.height;

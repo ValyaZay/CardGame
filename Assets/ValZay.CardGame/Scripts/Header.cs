@@ -4,7 +4,6 @@ namespace ValZay.CardGame
 {
     public class Header : MonoBehaviour
     {
-        [SerializeField] private RectTransform headerRectTransform;
         [SerializeField] private float headerPositionForNotchedDevices = -77f;
         [SerializeField] private float headerPositionForUsualDevices = 18f;
         
@@ -37,6 +36,7 @@ namespace ValZay.CardGame
         
         private void AlignHeader(float anchoredPosY)
         {
+            var headerRectTransform = GetComponent<RectTransform>();
             var rectY = anchoredPosY;
             headerRectTransform.anchoredPosition = new Vector2(0, rectY);
         }
