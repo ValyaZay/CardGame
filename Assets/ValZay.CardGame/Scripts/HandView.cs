@@ -9,7 +9,8 @@ namespace ValZay.CardGame
     public class HandView : MonoBehaviour
     {
         private const float OffsetZ = -0.1f;
-        private const float FadedCardOffsetX = 0.3f;
+        private const float FadedCardOffsetX = 0.25f;
+        private const float MaxActiveCardOffsetX = 0.65f;
         
         [SerializeField] private HandSetup handSetup;
         [SerializeField] private Transform leftMarker;
@@ -43,7 +44,34 @@ namespace ValZay.CardGame
 
         private float CalculateActiveCardOffsetX()
         {
-            return 0.4f;
+            var distanceBetweenMarkers = CalculateDistanceBetweenMarkers(leftMarker, rightMarker);
+            var distanceOccupiedByFadedCards = (fadedCards.Count() - 1) * FadedCardOffsetX;
+            var offset = (distanceBetweenMarkers - distanceOccupiedByFadedCards) / activeCards.Count();
+            if (offset > MaxActiveCardOffsetX)
+            {
+                offset = MaxActiveCardOffsetX;
+            }
+            Debug.Log("Offset active " + offset);
+            return offset;
+        }
+
+        private float CalculateDistanceBetweenMarkers(Transform left, Transform right)
+        {
+            var max = Mathf.Max(left.position.x, right.position.x);
+            var min = 0f;
+            
+            if (Mathf.Approximately(max, left.position.x))
+            {
+                min = right.position.x;
+            }
+            else
+            {
+                min = left.position.x;
+            }
+
+            var distance = max - min;
+            Debug.Log(distance);
+            return distance;
         }
 
         private void SplitCardsInHandToActiveAndFaded()
