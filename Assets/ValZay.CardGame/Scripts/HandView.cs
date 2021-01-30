@@ -15,38 +15,37 @@ namespace ValZay.CardGame
         [SerializeField] private HandSetup handSetup;
         [SerializeField] private Transform leftMarker;
         [SerializeField] private Transform rightMarker;
+        [SerializeField] private Transform cardsInstantiationStart;
         [SerializeField] private Transform handCardsParent;
         
         private Card[] deck;
         private string[] cardsInHand;
+        private int activeCardsCount;
+        private int fadedCardsCount;
         private string activeSuit;
-        private List<string> activeCards;
-        private List<string> fadedCards;
         private float activeCardOffsetX;
         
 
         private void Awake()
         {
             deck = handSetup.Deck;
-            cardsInHand = handSetup.ChooseCardsForHand();
-            activeSuit = handSetup.ChooseInitialActiveSuit(cardsInHand);
+            cardsInHand = handSetup.GetCards();
+            activeCardsCount = handSetup.ActiveCardsCount;
+            fadedCardsCount = handSetup.FadedCardsCount;
+            activeSuit = handSetup.InitialActiveSuit;
         }
 
         void Start()
         {
-            //split cardsInHand to active and faded array
-            SplitCardsInHandToActiveAndFaded();
             activeCardOffsetX = CalculateActiveCardOffsetX();
-            ShowFadedCards();
-           // ShowActiveCards(activeCards);
-            //SortCardsBySuit();
+            SetCardWidthAndColor();
         }
 
         private float CalculateActiveCardOffsetX()
         {
-            var distanceBetweenMarkers = CalculateDistanceBetweenMarkers(leftMarker, rightMarker);
-            var distanceOccupiedByFadedCards = (fadedCards.Count() - 1) * FadedCardOffsetX;
-            var offset = (distanceBetweenMarkers - distanceOccupiedByFadedCards) / activeCards.Count();
+            var distanceBetweenMarkers = CalculateDistanceBetweenMarkers(leftMarker.position.x, rightMarker.position.x);
+            var distanceOccupiedByFadedCards = (fadedCardsCount - 1) * FadedCardOffsetX;
+            var offset = (distanceBetweenMarkers - distanceOccupiedByFadedCards) / activeCardsCount;
             if (offset > MaxActiveCardOffsetX)
             {
                 offset = MaxActiveCardOffsetX;
@@ -55,51 +54,28 @@ namespace ValZay.CardGame
             return offset;
         }
 
-        private float CalculateDistanceBetweenMarkers(Transform left, Transform right)
+        private float CalculateDistanceBetweenMarkers(float leftX, float rightX)
         {
-            var max = Mathf.Max(left.position.x, right.position.x);
-            var min = 0f;
-            
-            if (Mathf.Approximately(max, left.position.x))
-            {
-                min = right.position.x;
-            }
-            else
-            {
-                min = left.position.x;
-            }
+            var maxX = leftX > rightX ? leftX : rightX;
+            var minX = leftX < rightX ? leftX: rightX;
 
-            var distance = max - min;
+            var distance = maxX - minX;
             Debug.Log(distance);
             return distance;
         }
 
-        private void SplitCardsInHandToActiveAndFaded()
-        {
-            activeCards = cardsInHand.Where(c => c == activeSuit).ToList();
-            fadedCards = cardsInHand.Where(c => c != activeSuit).ToList();
-        }
-
-        void ShowFadedCards()
+        void SetCardWidthAndColor()
         {
             var offsetX = 0f;
             var offsetZ = 0f;
             
-            //show all cards as faded
             for (int index = 0; index < cardsInHand.Length; index++)
             {
                 var cardToInstantiate = deck.Where(c => c.Suit.Contains(cardsInHand[index])).FirstOrDefault(); //
                 if (cardToInstantiate != null)
                 {
-                    
-                    // set faded true
-                    var prefabToInstantiate = cardToInstantiate.CardPrefab.gameObject;
-                    var instance = Instantiate(
-                        prefabToInstantiate,
-                        new Vector3(leftMarker.position.x + offsetX, leftMarker.position.y, leftMarker.position.z + offsetZ),
-                        Quaternion.identity,
-                        handCardsParent);
-                    
+                    var instance = InstantiateCard(cardToInstantiate, offsetX, offsetZ);
+
                     var active = cardToInstantiate.Suit == activeSuit;
                     if (active)
                     {
@@ -115,6 +91,17 @@ namespace ValZay.CardGame
                     offsetZ += OffsetZ;
                 }
             }
+        }
+
+        private GameObject InstantiateCard(Card cardToInstantiate, float offsetX, float offsetZ)
+        {
+            var prefabToInstantiate = cardToInstantiate.CardPrefab.gameObject;
+            var instance = Instantiate(
+                prefabToInstantiate,
+                new Vector3(cardsInstantiationStart.position.x + offsetX, cardsInstantiationStart.position.y, cardsInstantiationStart.position.z + offsetZ),
+                Quaternion.identity,
+                handCardsParent);
+            return instance;
         }
     }
 }

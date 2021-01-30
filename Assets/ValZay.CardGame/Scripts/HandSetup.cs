@@ -3,37 +3,62 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
-using UnityEngine.UIElements;
 
 namespace ValZay.CardGame
 {
     public class HandSetup : MonoBehaviour //todo make Deck class not Monobeh, but service 
     {
-        public event Func<string> SuitSelected;
         [SerializeField] Card[] deck;
         
         private string[] values = new string[] {"A", "2", "3", "4", "5", "6", "7", "8", "9", "10", "J", "Q", "K"};
         private List<string> deckWithValues;
-        private string[] chosenCardsForTable;
+        private string[] chosenCardsForHand;
         private const int AmountOfPlayableCards = 13;
         private string initialActiveSuit;
-
+        private List<string> activeCards;
+        private List<string> fadedCards;
 
         public Card[] Deck => deck;
+        public int ActiveCardsCount => GetActiveCardsCount();
+        public int FadedCardsCount => GetFadedCardsCount();
+        public string InitialActiveSuit => initialActiveSuit;
+        
 
-        public string[] ChooseCardsForHand()
+        public string[] GetCards()
         {
-            deckWithValues = GenerateDeck();
-            Shuffle(deckWithValues);
-            return deckWithValues.GetRange(0, AmountOfPlayableCards).ToArray();
+            chosenCardsForHand = ChooseCardsForHand();
+            initialActiveSuit = ChooseInitialActiveSuit(chosenCardsForHand);
+            Array.Sort(chosenCardsForHand, Comparer.DefaultInvariant);
+            return chosenCardsForHand;
         }
 
-        public string ChooseInitialActiveSuit(string[] cards)
+        private string ChooseInitialActiveSuit(string[] cards)
         {
             var initialSuit = cards[1];
             Debug.Log("Chosen Suit is " + initialSuit);
             return initialSuit;
         }
+        
+        public int GetActiveCardsCount()
+        {
+            activeCards = chosenCardsForHand.Where(c => c == initialActiveSuit).ToList();
+            Debug.Log(activeCards.Count());
+            return activeCards.Count();
+        } 
+        
+        public int GetFadedCardsCount()
+        {
+            fadedCards = chosenCardsForHand.Where(c => c != initialActiveSuit).ToList();
+            Debug.Log(fadedCards.Count());
+            return fadedCards.Count();
+        }
+        
+        private string[] ChooseCardsForHand()
+         {
+             deckWithValues = GenerateDeck();
+             Shuffle(deckWithValues);
+             return deckWithValues.GetRange(0, AmountOfPlayableCards).ToArray();
+         }
 
         private List<string> GenerateDeck()
         {

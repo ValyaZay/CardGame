@@ -589,7 +589,8 @@ MonoBehaviour:
     type: 3}
   rightMarker: {fileID: 5319783070050534186, guid: 42c568b6954ba364d96d0109674ca444,
     type: 3}
-  cardOffsetX: 0.3
+  cardsInstantiationStart: {fileID: 3686212606769252922, guid: 4f834bed3e063744e87d416b029c063b,
+    type: 3}
   handCardsParent: {fileID: 1048291837}
 --- !u!1 &1214621282
 GameObject:
