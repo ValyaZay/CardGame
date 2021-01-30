@@ -12,5 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 644839fa5b1742c28ea6db83e7728511, type: 3}
   m_Name: Hearts
   m_EditorClassIdentifier: 
-  image: {fileID: 21300000, guid: dacc052f731582643a9dbd18e256b44b, type: 3}
+  cardPrefab: {fileID: 4800845508519757001, guid: 27ad2b7b717aeb942bf9905a2cb86b4a,
+    type: 3}
   suit: Hearts

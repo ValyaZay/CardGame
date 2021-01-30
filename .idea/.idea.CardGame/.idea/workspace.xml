@@ -25,18 +25,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d25d63e9-956f-4e76-8489-a01cbb5329ef" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.CardGame/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.CardGame/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.CardGame/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.CardGame/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ValZay.CardGame/Scenes/Level.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ValZay.CardGame/Scenes/Level.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ValZay.CardGame/ScriptableObjects/Clubs.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ValZay.CardGame/ScriptableObjects/Clubs.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ValZay.CardGame/ScriptableObjects/Diamonds.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ValZay.CardGame/ScriptableObjects/Diamonds.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ValZay.CardGame/ScriptableObjects/Hearts.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ValZay.CardGame/ScriptableObjects/Hearts.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ValZay.CardGame/ScriptableObjects/Spades.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ValZay.CardGame/ScriptableObjects/Spades.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ValZay.CardGame/ScriptableObjects/Cards/Clubs.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ValZay.CardGame/ScriptableObjects/Cards/Clubs.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ValZay.CardGame/ScriptableObjects/Cards/Diamonds.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ValZay.CardGame/ScriptableObjects/Cards/Diamonds.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ValZay.CardGame/ScriptableObjects/Cards/Hearts.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ValZay.CardGame/ScriptableObjects/Cards/Hearts.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ValZay.CardGame/ScriptableObjects/Cards/Spades.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ValZay.CardGame/ScriptableObjects/Cards/Spades.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/ValZay.CardGame/Scripts/Card.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ValZay.CardGame/Scripts/Card.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ValZay.CardGame/Scripts/Deck.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ValZay.CardGame/Scripts/Deck.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ValZay.CardGame/Scripts/Deck.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ValZay.CardGame/Scripts/HandSetup.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ValZay.CardGame/Scripts/Deck.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ValZay.CardGame/Scripts/HandSetup.cs.meta" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,6 +47,7 @@
     <setting file="file://$PROJECT_DIR$/../Protokit/protokit/src/protokit-games/Assets/Games/SantaKlava/Scripts/Keys/Key.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/4AF5BEA1-B7B2-4424-94FD-73F6F9B3D7F4/29/1f4adebd/Canvas.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/8691AD70-05ED-4755-A182-8378FF0B52B1/1e/7e41433d/Screen.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/ValZay.CardGame/Scripts/HandView.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/ValZay.CardGame/Scripts/LevelLoad.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
@@ -65,7 +63,10 @@
         <option value="$PROJECT_DIR$/Assets/ValZay.CardGame/Scripts/Header.cs" />
         <option value="$PROJECT_DIR$/Assets/ValZay.CardGame/Scripts/SafeArea.cs" />
         <option value="$PROJECT_DIR$/Assets/ValZay.CardGame/Scripts/Card.cs" />
+        <option value="$PROJECT_DIR$/Assets/ValZay.CardGame/Scripts/Hand.cs" />
         <option value="$PROJECT_DIR$/Assets/ValZay.CardGame/Scripts/Deck.cs" />
+        <option value="$PROJECT_DIR$/Assets/ValZay.CardGame/Scripts/HandSetup.cs" />
+        <option value="$PROJECT_DIR$/Assets/ValZay.CardGame/Scripts/HandView.cs" />
       </list>
     </option>
   </component>
@@ -114,7 +115,7 @@
       <workItem from="1611721226867" duration="1803000" />
       <workItem from="1611809006249" duration="21730000" />
       <workItem from="1611843305366" duration="1480000" />
-      <workItem from="1611980662956" duration="8002000" />
+      <workItem from="1611980662956" duration="10030000" />
     </task>
     <servers />
   </component>

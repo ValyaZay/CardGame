@@ -7,30 +7,25 @@ using UnityEngine.UIElements;
 
 namespace ValZay.CardGame
 {
-    public class Deck : MonoBehaviour //todo make Deck class not Monobeh, but service 
+    public class HandSetup : MonoBehaviour //todo make Deck class not Monobeh, but service 
     {
         public event Func<string> SuitSelected;
-        [SerializeField] Card[] cards;
+        [SerializeField] Card[] deck;
         
         private string[] values = new string[] {"A", "2", "3", "4", "5", "6", "7", "8", "9", "10", "J", "Q", "K"};
-        private List<string> deck;
+        private List<string> deckWithValues;
         private string[] chosenCardsForTable;
         private const int AmountOfPlayableCards = 13;
         private string initialActiveSuit;
-        
-        
-        // Start is called before the first frame update
-        void Start() // todo remove when the class is not Monobeh 
-        {
-            chosenCardsForTable = ChooseCardsForTable();
-            initialActiveSuit = ChooseInitialActiveSuit(chosenCardsForTable);
-        }
 
-        private string[] ChooseCardsForTable() //todo make public when this class will not be Monobeh
+
+        public Card[] Deck => deck;
+
+        public string[] ChooseCardsForHand() //todo make public when this class will not be Monobeh
         {
-            deck = GenerateDeck();
-            Shuffle(deck);
-            var chosenCards = deck.GetRange(0, AmountOfPlayableCards).ToArray();
+            deckWithValues = GenerateDeck();
+            Shuffle(deckWithValues);
+            var chosenCards = deckWithValues.GetRange(0, AmountOfPlayableCards).ToArray();
 
             foreach (string card in chosenCards)
             {
@@ -40,7 +35,7 @@ namespace ValZay.CardGame
             return chosenCards;
         }
 
-        private string ChooseInitialActiveSuit(string[] cards) //todo make public when this class will not be Monobeh
+        public string ChooseInitialActiveSuit(string[] cards) //todo make public when this class will not be Monobeh
         {
             var initialSuit = cards[1];
             Debug.Log("Chosen Suit is " + initialSuit);
@@ -50,7 +45,7 @@ namespace ValZay.CardGame
         private List<string> GenerateDeck()
         {
             List<string> newDeck = new List<string>();
-            foreach (Card s in cards) //todo change foreach to for 
+            foreach (Card s in deck) //todo change foreach to for 
             {
                 foreach (string v in values)
                 {

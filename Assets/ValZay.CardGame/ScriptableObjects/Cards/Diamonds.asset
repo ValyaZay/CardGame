@@ -12,5 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 644839fa5b1742c28ea6db83e7728511, type: 3}
   m_Name: Diamonds
   m_EditorClassIdentifier: 
-  image: {fileID: 21300000, guid: 227afc97d2cc8204b993efed9339fb32, type: 3}
+  cardPrefab: {fileID: 8460480648989387992, guid: f802a310377748548a9bf10ee4fcfdf6,
+    type: 3}
   suit: Diamonds

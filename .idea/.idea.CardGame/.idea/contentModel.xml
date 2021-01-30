@@ -8,7 +8,8 @@
         <e p="ValZay.CardGame" t="Include">
           <e p="Scripts" t="Include">
             <e p="Card.cs" t="Include" />
-            <e p="Deck.cs" t="Include" />
+            <e p="HandSetup.cs" t="Include" />
+            <e p="HandView.cs" t="Include" />
             <e p="Header.cs" t="Include" />
             <e p="LevelLoad.cs" t="Include" />
             <e p="SafeArea.cs" t="Include" />

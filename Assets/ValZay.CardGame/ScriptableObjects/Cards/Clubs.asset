@@ -12,5 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 644839fa5b1742c28ea6db83e7728511, type: 3}
   m_Name: Clubs
   m_EditorClassIdentifier: 
-  image: {fileID: 21300000, guid: bfe974732b048df4e957a6a296a7a45e, type: 3}
+  cardPrefab: {fileID: 8702101056942719335, guid: 924b854170da4ca4db2c5e6c77238d63,
+    type: 3}
   suit: Clubs
