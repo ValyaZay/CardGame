@@ -25,11 +25,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d25d63e9-956f-4e76-8489-a01cbb5329ef" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.CardGame/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.CardGame/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ValZay.CardGame/Prefabs/Markers/LeftMarker.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ValZay.CardGame/Prefabs/Markers/LeftMarker.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ValZay.CardGame/Prefabs/Markers/RightMarker.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ValZay.CardGame/Prefabs/Markers/RightMarker.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ValZay.CardGame/Scenes/Level.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ValZay.CardGame/Scenes/Level.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ValZay.CardGame/Scripts/HandSetup.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ValZay.CardGame/Scripts/HandSetup.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/ValZay.CardGame/Scripts/HandView.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ValZay.CardGame/Scripts/HandView.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -63,8 +58,8 @@
         <option value="$PROJECT_DIR$/Assets/ValZay.CardGame/Scripts/Hand.cs" />
         <option value="$PROJECT_DIR$/Assets/ValZay.CardGame/Scripts/Deck.cs" />
         <option value="$PROJECT_DIR$/Assets/ValZay.CardGame/Scripts/Card.cs" />
-        <option value="$PROJECT_DIR$/Assets/ValZay.CardGame/Scripts/HandView.cs" />
         <option value="$PROJECT_DIR$/Assets/ValZay.CardGame/Scripts/HandSetup.cs" />
+        <option value="$PROJECT_DIR$/Assets/ValZay.CardGame/Scripts/HandView.cs" />
       </list>
     </option>
   </component>
@@ -113,7 +108,7 @@
       <workItem from="1611721226867" duration="1803000" />
       <workItem from="1611809006249" duration="21730000" />
       <workItem from="1611843305366" duration="1480000" />
-      <workItem from="1611980662956" duration="23986000" />
+      <workItem from="1611980662956" duration="24379000" />
     </task>
     <servers />
   </component>
@@ -248,23 +243,23 @@
           <line>67</line>
           <properties documentPath="D:\UnityProjects\CardGame\Assets\ValZay.CardGame\Scripts\HandView.cs" initialLine="48">
             <startOffsets>
-              <option value="2270" />
+              <option value="2293" />
             </startOffsets>
             <endOffsets>
-              <option value="2271" />
+              <option value="2294" />
             </endOffsets>
           </properties>
           <option name="timeStamp" value="14" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
           <url>file://$PROJECT_DIR$/Assets/ValZay.CardGame/Scripts/HandView.cs</url>
-          <line>93</line>
+          <line>95</line>
           <properties documentPath="D:\UnityProjects\CardGame\Assets\ValZay.CardGame\Scripts\HandView.cs" initialLine="72">
             <startOffsets>
-              <option value="3291" />
+              <option value="3392" />
             </startOffsets>
             <endOffsets>
-              <option value="3292" />
+              <option value="3393" />
             </endOffsets>
           </properties>
           <option name="timeStamp" value="16" />
@@ -274,10 +269,10 @@
           <line>53</line>
           <properties documentPath="D:\UnityProjects\CardGame\Assets\ValZay.CardGame\Scripts\HandView.cs" initialLine="49">
             <startOffsets>
-              <option value="1884" />
+              <option value="1900" />
             </startOffsets>
             <endOffsets>
-              <option value="1898" />
+              <option value="1914" />
             </endOffsets>
           </properties>
           <option name="timeStamp" value="17" />

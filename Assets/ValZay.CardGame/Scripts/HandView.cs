@@ -38,13 +38,13 @@ namespace ValZay.CardGame
         void Start()
         {
             activeCardOffsetX = CalculateActiveCardOffsetX();
-            SetCardWidthAndColor();
+            StartCoroutine(SetCardWidthAndColor());
         }
 
         private float CalculateActiveCardOffsetX()
         {
             var distanceBetweenMarkers = CalculateDistanceBetweenMarkers(leftMarker.position.x, rightMarker.position.x);
-            var distanceOccupiedByFadedCards = (fadedCardsCount - 1) * FadedCardOffsetX;
+            var distanceOccupiedByFadedCards = fadedCardsCount * FadedCardOffsetX;
             var offset = (distanceBetweenMarkers - distanceOccupiedByFadedCards) / activeCardsCount;
             if (offset > MaxActiveCardOffsetX)
             {
@@ -64,7 +64,7 @@ namespace ValZay.CardGame
             return distance;
         }
 
-        void SetCardWidthAndColor()
+        IEnumerator SetCardWidthAndColor()
         {
             var offsetX = 0f;
             var offsetZ = 0f;
@@ -87,6 +87,8 @@ namespace ValZay.CardGame
                         offsetX += FadedCardOffsetX;
                         instance.GetComponent<SpriteRenderer>().color = Color.grey;
                     } 
+                    
+                    yield return new WaitForSeconds(0.1f);
                     
                     offsetZ += OffsetZ;
                 }
