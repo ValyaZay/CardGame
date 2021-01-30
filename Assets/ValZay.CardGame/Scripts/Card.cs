@@ -7,7 +7,8 @@ namespace ValZay.CardGame
     {
         [SerializeField] private Sprite image;
         [SerializeField] private string suit;
-    
+        
         private bool faded = true;
+        public string Suit => suit;
     }
 }

@@ -10,8 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 644839fa5b1742c28ea6db83e7728511, type: 3}
-  m_Name: Diamonds
+  m_Name: Clubs
   m_EditorClassIdentifier: 
-  image: {fileID: 0}
-  spriteRenderer: {fileID: 0}
-  suit: 
+  image: {fileID: 21300000, guid: bfe974732b048df4e957a6a296a7a45e, type: 3}
+  suit: Clubs

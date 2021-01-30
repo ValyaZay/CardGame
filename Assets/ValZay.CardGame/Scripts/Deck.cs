@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
@@ -8,48 +9,52 @@ namespace ValZay.CardGame
 {
     public class Deck : MonoBehaviour //todo make Deck class not Monobeh, but service 
     {
-        public static string[] suits = new string[] {"C", "D", "H", "S"};
-        public static string[] values = new string[] {"A", "2", "3", "4", "5", "6", "7", "8", "9", "10", "J", "Q", "K"};
-
-        public List<string> deck;
+        public event Func<string> SuitSelected;
+        [SerializeField] Card[] cards;
+        
+        private string[] values = new string[] {"A", "2", "3", "4", "5", "6", "7", "8", "9", "10", "J", "Q", "K"};
+        private List<string> deck;
+        private string[] chosenCardsForTable;
         private const int AmountOfPlayableCards = 13;
+        private string initialActiveSuit;
         
         
         // Start is called before the first frame update
-        void Start()
+        void Start() // todo remove when the class is not Monobeh 
         {
-            var cards = ChooseCardsForTable();
-            ChooseInitialActiveSuit(cards);
+            chosenCardsForTable = ChooseCardsForTable();
+            initialActiveSuit = ChooseInitialActiveSuit(chosenCardsForTable);
         }
 
-        private string[] ChooseCardsForTable()
+        private string[] ChooseCardsForTable() //todo make public when this class will not be Monobeh
         {
             deck = GenerateDeck();
             Shuffle(deck);
-            var chosenCardsForTable = deck.GetRange(0, AmountOfPlayableCards).ToArray();
+            var chosenCards = deck.GetRange(0, AmountOfPlayableCards).ToArray();
 
-            foreach (string card in chosenCardsForTable)
+            foreach (string card in chosenCards)
             {
                 Debug.Log(card);
             }
 
-            return chosenCardsForTable;
+            return chosenCards;
         }
 
-        private void ChooseInitialActiveSuit(string[] cards)
+        private string ChooseInitialActiveSuit(string[] cards) //todo make public when this class will not be Monobeh
         {
-            var chosenSuitForGamePlay = cards[1];
-            Debug.Log("Chosen Suit is " + chosenSuitForGamePlay);
+            var initialSuit = cards[1];
+            Debug.Log("Chosen Suit is " + initialSuit);
+            return initialSuit;
         }
 
         private List<string> GenerateDeck()
         {
             List<string> newDeck = new List<string>();
-            foreach (string s in suits) //todo change foreach to for 
+            foreach (Card s in cards) //todo change foreach to for 
             {
                 foreach (string v in values)
                 {
-                    newDeck.Add(s + v);
+                    newDeck.Add(s.Suit + v);
                 }
             }
 
