@@ -21,21 +21,14 @@ namespace ValZay.CardGame
 
         public Card[] Deck => deck;
 
-        public string[] ChooseCardsForHand() //todo make public when this class will not be Monobeh
+        public string[] ChooseCardsForHand()
         {
             deckWithValues = GenerateDeck();
             Shuffle(deckWithValues);
-            var chosenCards = deckWithValues.GetRange(0, AmountOfPlayableCards).ToArray();
-
-            foreach (string card in chosenCards)
-            {
-                Debug.Log(card);
-            }
-
-            return chosenCards;
+            return deckWithValues.GetRange(0, AmountOfPlayableCards).ToArray();
         }
 
-        public string ChooseInitialActiveSuit(string[] cards) //todo make public when this class will not be Monobeh
+        public string ChooseInitialActiveSuit(string[] cards)
         {
             var initialSuit = cards[1];
             Debug.Log("Chosen Suit is " + initialSuit);
@@ -49,7 +42,7 @@ namespace ValZay.CardGame
             {
                 foreach (string v in values)
                 {
-                    newDeck.Add(s.Suit + v);
+                    newDeck.Add(s.Suit);
                 }
             }
 

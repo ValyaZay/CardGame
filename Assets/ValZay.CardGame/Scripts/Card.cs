@@ -10,5 +10,7 @@ namespace ValZay.CardGame
         
         private bool faded = true;
         public string Suit => suit;
+
+        public GameObject CardPrefab => cardPrefab;
     }
 }
