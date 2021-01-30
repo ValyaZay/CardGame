@@ -27,7 +27,6 @@ namespace ValZay.CardGame
             deck = GenerateDeck();
             Shuffle(deck);
             var chosenCardsForTable = deck.GetRange(0, AmountOfPlayableCards).ToArray();
-            ChooseInitialActiveSuit(chosenCardsForTable);
 
             foreach (string card in chosenCardsForTable)
             {

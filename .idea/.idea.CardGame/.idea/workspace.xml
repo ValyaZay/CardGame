@@ -25,9 +25,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d25d63e9-956f-4e76-8489-a01cbb5329ef" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Assets/ValZay.CardGame/Scripts/Card.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/ValZay.CardGame/Scripts/Card.cs.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.CardGame/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.CardGame/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.CardGame/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.CardGame/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ValZay.CardGame/Scenes/Level.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ValZay.CardGame/Scenes/Level.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ValZay.CardGame/Scripts/Deck.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ValZay.CardGame/Scripts/Deck.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,6 +58,7 @@
         <option value="$PROJECT_DIR$/Assets/ValZay.CardGame/Scripts/Header.cs" />
         <option value="$PROJECT_DIR$/Assets/ValZay.CardGame/Scripts/SafeArea.cs" />
         <option value="$PROJECT_DIR$/Assets/ValZay.CardGame/Scripts/Deck.cs" />
+        <option value="$PROJECT_DIR$/Assets/ValZay.CardGame/Scripts/Card.cs" />
       </list>
     </option>
   </component>
@@ -104,7 +107,7 @@
       <workItem from="1611721226867" duration="1803000" />
       <workItem from="1611809006249" duration="21730000" />
       <workItem from="1611843305366" duration="1480000" />
-      <workItem from="1611980662956" duration="2283000" />
+      <workItem from="1611980662956" duration="3554000" />
     </task>
     <servers />
   </component>
@@ -236,13 +239,13 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
           <url>file://$PROJECT_DIR$/Assets/ValZay.CardGame/Scripts/Deck.cs</url>
-          <line>32</line>
+          <line>31</line>
           <properties documentPath="D:\UnityProjects\CardGame\Assets\ValZay.CardGame\Scripts\Deck.cs" initialLine="30">
             <startOffsets>
-              <option value="1059" />
+              <option value="1020" />
             </startOffsets>
             <endOffsets>
-              <option value="1060" />
+              <option value="1021" />
             </endOffsets>
           </properties>
           <option name="timeStamp" value="9" />
