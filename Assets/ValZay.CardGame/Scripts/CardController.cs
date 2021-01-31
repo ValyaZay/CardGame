@@ -10,16 +10,19 @@ namespace ValZay.CardGame
         [SerializeField] private float speed = 5f;
 
         private HandView handView;
+        private ScoreView scoreView;
 
         private void Start()
         {
             handView = FindObjectOfType<HandView>();
+            scoreView = FindObjectOfType<ScoreView>();
         }
 
         private void OnMouseDown()
          {
              handView.RemoveCardFromHandCollection(transform.position);
              StartCoroutine(Move());
+             
          }
 
         IEnumerator Move()
@@ -32,11 +35,12 @@ namespace ValZay.CardGame
                 yield return null;
             }
             
-            //var cachePos = transform.localPosition;
-            //SlideRemainingIconsToLeft(cachePos);
+            yield return new WaitForSeconds(2f);
+            scoreView.UpdateScore();
+            Destroy(gameObject);
             
-            
-            Destroy(gameObject, 2f);
         }
+        
+        
     }
 }
