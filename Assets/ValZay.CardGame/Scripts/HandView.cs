@@ -10,12 +10,12 @@ namespace ValZay.CardGame
     {
         private const float OffsetZ = -0.1f;
         private const float FadedCardOffsetX = 0.25f;
-        private const float MaxActiveCardOffsetX = 0.65f;
+        //private const float MaxActiveCardOffsetX = 0.65f;
         
         [Header("Dependencies")]
         [SerializeField] private HandSetup handSetup;
         [SerializeField] private MiddleCard middleCard;
-
+        
         [Header("Transforms/Markers")]
         [SerializeField] private Transform leftMarker;
         [SerializeField] private Transform rightMarker;
@@ -26,7 +26,7 @@ namespace ValZay.CardGame
         [SerializeField] private Sprite backSprite;
         
         private Card[] deck;
-        private string[] cardsInHand;
+        private List<string> cardsInHand;
         private int activeCardsCount;
         private int fadedCardsCount;
         private string activeSuit;
@@ -36,7 +36,7 @@ namespace ValZay.CardGame
         private void Awake()
         {
             deck = handSetup.Deck;
-            cardsInHand = handSetup.GetCards();
+            cardsInHand = handSetup.GetCards().ToList();
             activeCardsCount = handSetup.ActiveCardsCount;
             fadedCardsCount = handSetup.FadedCardsCount;
             activeSuit = handSetup.InitialActiveSuit;
@@ -45,8 +45,26 @@ namespace ValZay.CardGame
         void Start()
         {
             middleCard.Arrived += ToggleMiddleCardArrived;
+            //cardController.PlayedCardDestroyed += RemoveCardFromHandCollection;
             activeCardOffsetX = CalculateActiveCardOffsetX();
             StartCoroutine(SetCardWidthAndColor());
+        }
+
+        public void RemoveCardFromHandCollection()
+        {
+            var removed = cardsInHand.Remove(activeSuit);
+            if (removed)
+            {
+               // RelocateActiveCards();
+            }
+            
+            
+            Debug.Log("Remaining cards in hand = " + cardsInHand.Count);
+        }
+
+        private void RelocateActiveCards()
+        {
+            throw new NotImplementedException();
         }
 
         private void ToggleMiddleCardArrived()
@@ -58,11 +76,12 @@ namespace ValZay.CardGame
         {
             var distanceBetweenMarkers = CalculateDistanceBetweenMarkers(leftMarker.position.x, rightMarker.position.x);
             var distanceOccupiedByFadedCards = fadedCardsCount * FadedCardOffsetX;
-            var offset = (distanceBetweenMarkers - distanceOccupiedByFadedCards) / activeCardsCount;
-            if (offset > MaxActiveCardOffsetX)
-            {
-                offset = MaxActiveCardOffsetX;
-            }
+            var distanceOccupiedByActiveCards = distanceBetweenMarkers - distanceOccupiedByFadedCards;
+            var offset = (distanceOccupiedByActiveCards) / activeCardsCount;
+            // if (offset > MaxActiveCardOffsetX)
+            // {
+            //     offset = MaxActiveCardOffsetX;
+            // }
             Debug.Log("Offset active " + offset);
             return offset;
         }
@@ -84,7 +103,7 @@ namespace ValZay.CardGame
             var offsetX = 0f;
             var offsetZ = 0f;
             
-            for (int index = 0; index < cardsInHand.Length; index++)
+            for (int index = 0; index < cardsInHand.Count; index++)
             {
                 var cardToInstantiate = deck.Where(c => c.Suit.Contains(cardsInHand[index])).FirstOrDefault(); //
                 if (cardToInstantiate != null)

@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using UnityEngine;
 
 namespace ValZay.CardGame
@@ -7,7 +8,14 @@ namespace ValZay.CardGame
     {
         [SerializeField] private Transform target;
         [SerializeField] private float speed = 5f;
-        
+
+        private HandView handView;
+
+        private void Start()
+        {
+            handView = FindObjectOfType<HandView>();
+        }
+
         private void OnMouseDown()
          {
              StartCoroutine(Move());
@@ -22,6 +30,11 @@ namespace ValZay.CardGame
                 transform.position = Vector3.MoveTowards(transform.position, target.position, step);
                 yield return null;
             }
+            
+            //var cachePos = transform.localPosition;
+            //SlideRemainingIconsToLeft(cachePos);
+            handView.RemoveCardFromHandCollection();
+            
             Destroy(gameObject, 2f);
         }
     }

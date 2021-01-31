@@ -25,14 +25,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d25d63e9-956f-4e76-8489-a01cbb5329ef" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.CardGame/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.CardGame/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.CardGame/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.CardGame/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ValZay.CardGame/Prefabs/Cards/Clubs.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ValZay.CardGame/Prefabs/Cards/Clubs.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ValZay.CardGame/Prefabs/Cards/Diamonds.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ValZay.CardGame/Prefabs/Cards/Diamonds.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ValZay.CardGame/Prefabs/Cards/Hearts.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ValZay.CardGame/Prefabs/Cards/Hearts.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ValZay.CardGame/Prefabs/Cards/Spades.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ValZay.CardGame/Prefabs/Cards/Spades.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ValZay.CardGame/Scenes/Level.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ValZay.CardGame/Scenes/Level.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ValZay.CardGame/Scripts/CardController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ValZay.CardGame/Scripts/CardController.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/ValZay.CardGame/Scripts/HandView.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ValZay.CardGame/Scripts/HandView.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ValZay.CardGame/Scripts/MiddleCard.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ValZay.CardGame/Scripts/MiddleCard.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -68,9 +64,9 @@
         <option value="$PROJECT_DIR$/Assets/ValZay.CardGame/Scripts/HandSetup.cs" />
         <option value="$PROJECT_DIR$/Assets/ValZay.CardGame/Scripts/SafeArea.cs" />
         <option value="$PROJECT_DIR$/Assets/ValZay.CardGame/Scripts/CardInstance.cs" />
-        <option value="$PROJECT_DIR$/Assets/ValZay.CardGame/Scripts/HandView.cs" />
         <option value="$PROJECT_DIR$/Assets/ValZay.CardGame/Scripts/MiddleCard.cs" />
         <option value="$PROJECT_DIR$/Assets/ValZay.CardGame/Scripts/CardController.cs" />
+        <option value="$PROJECT_DIR$/Assets/ValZay.CardGame/Scripts/HandView.cs" />
       </list>
     </option>
   </component>
@@ -237,5 +233,9 @@
       <screen x="-1920" y="80" width="1920" height="1040" />
     </state>
     <state x="-1368" y="333" key="Vcs.Push.Dialog.v2/0.0.1536.824/-1920.80.1920.1040@-1920.80.1920.1040" timestamp="1612073865400" />
+    <state x="-1297" y="305" width="672" height="678" key="search.everywhere.popup" timestamp="1612075365772">
+      <screen x="-1920" y="80" width="1920" height="1040" />
+    </state>
+    <state x="-1297" y="305" width="672" height="678" key="search.everywhere.popup/0.0.1536.824/-1920.80.1920.1040@-1920.80.1920.1040" timestamp="1612075365772" />
   </component>
 </project>
