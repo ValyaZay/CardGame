@@ -32,6 +32,9 @@ namespace ValZay.CardGame
         private string activeSuit;
         private float activeCardOffsetX;
         private bool middleCardArrived;
+        private float distanceOccupiedByActiveCards;
+        private Vector3 firstActiveCardPosition;
+        private List<GameObject> activeCardsInstances = new List<GameObject>();
 
         private void Awake()
         {
@@ -50,21 +53,51 @@ namespace ValZay.CardGame
             StartCoroutine(SetCardWidthAndColor());
         }
 
-        public void RemoveCardFromHandCollection()
+        public void RemoveCardFromHandCollection(Vector3 position)
         {
             var removed = cardsInHand.Remove(activeSuit);
+            
             if (removed)
             {
-               // RelocateActiveCards();
+                activeCardsCount--;
+                
+                var instanceToRemove = activeCardsInstances.Find(i => Mathf.Approximately(i.transform.position.x, position.x));
+                activeCardsInstances.Remove(instanceToRemove);
+                if (activeCardsInstances.Count > 0)
+                {
+                    StartCoroutine(RelocateActiveCards());
+                }
+
+                // foreach (var card in activeCardsInstances)
+                // {
+                //     Debug.Log("Active cards positions" + card.transform.position);
+                // }
             }
             
             
             Debug.Log("Remaining cards in hand = " + cardsInHand.Count);
         }
 
-        private void RelocateActiveCards()
+        private IEnumerator RelocateActiveCards()
         {
-            throw new NotImplementedException();
+            var offset = 0f;
+            var recalculatedOffset = (distanceOccupiedByActiveCards) / activeCardsCount;
+            Debug.Log("Active Cards count " + activeCardsCount);
+            Debug.Log("New offset = " + recalculatedOffset);
+            for (int index = 0; index < activeCardsInstances.Count; index++)
+            {
+                var targetPosition = new Vector3(firstActiveCardPosition.x + offset, firstActiveCardPosition.y,
+                    activeCardsInstances[index].transform.position.z);
+                while (Vector3.Distance(activeCardsInstances[index].transform.position, targetPosition) > 0.001f)
+                {
+                    activeCardsInstances[index].transform.position = Vector3.MoveTowards(activeCardsInstances[index].transform.position,
+                        targetPosition, 3f * Time.deltaTime);
+                    yield return null;
+                }
+
+                offset += recalculatedOffset;
+                
+            }
         }
 
         private void ToggleMiddleCardArrived()
@@ -76,13 +109,15 @@ namespace ValZay.CardGame
         {
             var distanceBetweenMarkers = CalculateDistanceBetweenMarkers(leftMarker.position.x, rightMarker.position.x);
             var distanceOccupiedByFadedCards = fadedCardsCount * FadedCardOffsetX;
-            var distanceOccupiedByActiveCards = distanceBetweenMarkers - distanceOccupiedByFadedCards;
+            var activeIsLastCardInHand = cardsInHand[cardsInHand.Count - 1] == activeSuit;
+            distanceOccupiedByActiveCards = distanceBetweenMarkers - distanceOccupiedByFadedCards;
+            if (activeIsLastCardInHand)
+            {
+                distanceOccupiedByActiveCards += FadedCardOffsetX;
+            }
+            
             var offset = (distanceOccupiedByActiveCards) / activeCardsCount;
-            // if (offset > MaxActiveCardOffsetX)
-            // {
-            //     offset = MaxActiveCardOffsetX;
-            // }
-            Debug.Log("Offset active " + offset);
+            Debug.Log("Initial Offset active " + offset);
             return offset;
         }
 
@@ -102,7 +137,7 @@ namespace ValZay.CardGame
             
             var offsetX = 0f;
             var offsetZ = 0f;
-            
+            var firstActive = true;
             for (int index = 0; index < cardsInHand.Count; index++)
             {
                 var cardToInstantiate = deck.Where(c => c.Suit.Contains(cardsInHand[index])).FirstOrDefault(); //
@@ -115,11 +150,21 @@ namespace ValZay.CardGame
 
 
                     var active = cardToInstantiate.Suit == activeSuit;
+                    
                     if (active)
                     {
+                        while (firstActive)
+                        {
+                            var instancePosition = instance.transform.position;
+                            firstActiveCardPosition = new Vector3(instancePosition.x,
+                                                                    instancePosition.y,
+                                                                    instancePosition.z);
+                            firstActive = false;
+                        }
                         offsetX += activeCardOffsetX;
                         instance.GetComponent<SpriteRenderer>().color = Color.white;
                         instance.AddComponent<BoxCollider2D>();
+                        activeCardsInstances.Add(instance);
                     }
                     else
                     {

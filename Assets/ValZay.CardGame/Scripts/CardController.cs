@@ -18,6 +18,7 @@ namespace ValZay.CardGame
 
         private void OnMouseDown()
          {
+             handView.RemoveCardFromHandCollection(transform.position);
              StartCoroutine(Move());
          }
 
@@ -33,7 +34,7 @@ namespace ValZay.CardGame
             
             //var cachePos = transform.localPosition;
             //SlideRemainingIconsToLeft(cachePos);
-            handView.RemoveCardFromHandCollection();
+            
             
             Destroy(gameObject, 2f);
         }
