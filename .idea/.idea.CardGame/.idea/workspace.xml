@@ -25,9 +25,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d25d63e9-956f-4e76-8489-a01cbb5329ef" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.CardGame/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.CardGame/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.CardGame/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.CardGame/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ValZay.CardGame/Scenes/Level.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ValZay.CardGame/Scenes/Level.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/ValZay.CardGame/Scripts/HandView.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ValZay.CardGame/Scripts/HandView.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ValZay.CardGame/Scripts/SafeArea.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ValZay.CardGame/Scripts/SafeArea.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,6 +44,7 @@
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/8691AD70-05ED-4755-A182-8378FF0B52B1/1e/7e41433d/Screen.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/ValZay.CardGame/Scripts/HandView.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/ValZay.CardGame/Scripts/MiddleCard.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/ValZay.CardGame/Scripts/LevelLoad.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
@@ -60,8 +62,9 @@
         <option value="$PROJECT_DIR$/Assets/ValZay.CardGame/Scripts/Deck.cs" />
         <option value="$PROJECT_DIR$/Assets/ValZay.CardGame/Scripts/Card.cs" />
         <option value="$PROJECT_DIR$/Assets/ValZay.CardGame/Scripts/HandSetup.cs" />
-        <option value="$PROJECT_DIR$/Assets/ValZay.CardGame/Scripts/HandView.cs" />
         <option value="$PROJECT_DIR$/Assets/ValZay.CardGame/Scripts/SafeArea.cs" />
+        <option value="$PROJECT_DIR$/Assets/ValZay.CardGame/Scripts/MiddleCard.cs" />
+        <option value="$PROJECT_DIR$/Assets/ValZay.CardGame/Scripts/HandView.cs" />
       </list>
     </option>
   </component>
@@ -111,7 +114,7 @@
       <workItem from="1611809006249" duration="21730000" />
       <workItem from="1611843305366" duration="1480000" />
       <workItem from="1611980662956" duration="24379000" />
-      <workItem from="1612066357334" duration="1427000" />
+      <workItem from="1612066357334" duration="3716000" />
     </task>
     <servers />
   </component>
@@ -230,26 +233,26 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
           <url>file://$PROJECT_DIR$/Assets/ValZay.CardGame/Scripts/SafeArea.cs</url>
-          <line>54</line>
+          <line>56</line>
           <properties documentPath="D:\UnityProjects\CardGame\Assets\ValZay.CardGame\Scripts\SafeArea.cs" initialLine="49">
             <startOffsets>
-              <option value="1427" />
+              <option value="1567" />
             </startOffsets>
             <endOffsets>
-              <option value="1428" />
+              <option value="1568" />
             </endOffsets>
           </properties>
           <option name="timeStamp" value="8" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
           <url>file://$PROJECT_DIR$/Assets/ValZay.CardGame/Scripts/HandView.cs</url>
-          <line>100</line>
+          <line>111</line>
           <properties documentPath="D:\UnityProjects\CardGame\Assets\ValZay.CardGame\Scripts\HandView.cs" initialLine="72">
             <startOffsets>
-              <option value="3722" />
+              <option value="4109" />
             </startOffsets>
             <endOffsets>
-              <option value="3723" />
+              <option value="4110" />
             </endOffsets>
           </properties>
           <option name="timeStamp" value="16" />
@@ -259,10 +262,10 @@
           <line>33</line>
           <properties documentPath="D:\UnityProjects\CardGame\Assets\ValZay.CardGame\Scripts\SafeArea.cs" initialLine="33">
             <startOffsets>
-              <option value="693" />
+              <option value="690" />
             </startOffsets>
             <endOffsets>
-              <option value="746" />
+              <option value="743" />
             </endOffsets>
           </properties>
           <option name="timeStamp" value="21" />

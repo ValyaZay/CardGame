@@ -12,11 +12,17 @@ namespace ValZay.CardGame
         private const float FadedCardOffsetX = 0.25f;
         private const float MaxActiveCardOffsetX = 0.65f;
         
+        [Header("Dependencies")]
         [SerializeField] private HandSetup handSetup;
+        [SerializeField] private MiddleCard middleCard;
+
+        [Header("Transforms/Markers")]
         [SerializeField] private Transform leftMarker;
         [SerializeField] private Transform rightMarker;
         [SerializeField] private Transform cardsInstantiationStart;
         [SerializeField] private Transform handCardsParent;
+        
+        [Header("Other")]
         [SerializeField] private Sprite backSprite;
         
         private Card[] deck;
@@ -25,7 +31,7 @@ namespace ValZay.CardGame
         private int fadedCardsCount;
         private string activeSuit;
         private float activeCardOffsetX;
-        
+        private bool middleCardArrived;
 
         private void Awake()
         {
@@ -38,8 +44,14 @@ namespace ValZay.CardGame
 
         void Start()
         {
+            middleCard.Arrived += ToggleMiddleCardArrived;
             activeCardOffsetX = CalculateActiveCardOffsetX();
             StartCoroutine(SetCardWidthAndColor());
+        }
+
+        private void ToggleMiddleCardArrived()
+        {
+            middleCardArrived = true;
         }
 
         private float CalculateActiveCardOffsetX()
@@ -67,6 +79,8 @@ namespace ValZay.CardGame
 
         IEnumerator SetCardWidthAndColor()
         {
+            yield return new WaitUntil(() => middleCardArrived == true);
+            
             var offsetX = 0f;
             var offsetZ = 0f;
             
