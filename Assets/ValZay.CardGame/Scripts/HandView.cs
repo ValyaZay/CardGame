@@ -67,7 +67,7 @@ namespace ValZay.CardGame
                 
                 var instanceToRemove = activeCardsInstances.Find(i => Mathf.Approximately(i.transform.position.x, position.x));
                 activeCardsInstances.Remove(instanceToRemove);
-                if (activeCardsInstances.Count > 0)
+                if (activeCardsInstances.Count > 1)
                 {
                     StartCoroutine(RelocateActiveCards());
                 }
@@ -105,7 +105,7 @@ namespace ValZay.CardGame
         {
             var targetPositionWithSlidingOffset = new Vector3(firstActiveCardPosition.x + slidingOffsetX,
                 fadedCardsInstancesSecondPart[0].transform.position.y, fadedCardsInstancesSecondPart[0].transform.position.z);
-            var targetPositionWithDefaultFadedOffset = new Vector3(firstActiveCardPosition.x + FadedCardOffsetX,
+            var targetPositionWithDefaultFadedOffset = new Vector3(firstActiveCardPosition.x,
                 fadedCardsInstancesSecondPart[0].transform.position.y, fadedCardsInstancesSecondPart[0].transform.position.z);
 
             var targetPosition = activeCardsInstances.Count == 1
@@ -127,13 +127,12 @@ namespace ValZay.CardGame
 
         private IEnumerator RelocateActiveCards()
         {
-            slidingOffsetX = 0f;
+            var offset = 0f;
             if (activeIsLastCardInHand)
             {
                 distanceOccupiedByActiveCards += FadedCardOffsetX;
             }
             var recalculatedOffset = (distanceOccupiedByActiveCards) / activeCardsCount;
-            Debug.Log("Active Cards count " + activeCardsCount);
             Debug.Log("New offset = " + recalculatedOffset);
             for (int index = 0; index < activeCardsInstances.Count; index++)
             {
@@ -141,7 +140,7 @@ namespace ValZay.CardGame
                 // {
                     SaveLastActiveCardPosition(activeCardsInstances[activeCardsInstances.Count - 1]);
                 //}
-                var targetPosition = new Vector3(firstActiveCardPosition.x + slidingOffsetX, firstActiveCardPosition.y,
+                var targetPosition = new Vector3(firstActiveCardPosition.x + offset, firstActiveCardPosition.y,
                     activeCardsInstances[index].transform.position.z);
                 while (Vector3.Distance(activeCardsInstances[index].transform.position, targetPosition) > 0.001f)
                 {
@@ -150,9 +149,11 @@ namespace ValZay.CardGame
                     yield return null;
                 }
 
-                slidingOffsetX += recalculatedOffset;
-                
+                offset += recalculatedOffset;
             }
+
+            slidingOffsetX = recalculatedOffset;
+            Debug.Log("Sliding offset = " + slidingOffsetX);
         }
 
         private void ToggleMiddleCardArrived()

@@ -35,7 +35,6 @@ namespace ValZay.CardGame
         private string ChooseInitialActiveSuit(string[] cards)
         {
             var initialSuit = cards[1];
-            Debug.Log("Chosen Suit is " + initialSuit);
             return initialSuit;
         }
         
