@@ -25,7 +25,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d25d63e9-956f-4e76-8489-a01cbb5329ef" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.CardGame/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.CardGame/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/ValZay.CardGame/Scripts/HandView.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ValZay.CardGame/Scripts/HandView.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ValZay.CardGame/Scripts/SafeArea.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ValZay.CardGame/Scripts/SafeArea.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,12 +56,12 @@
         <option value="$PROJECT_DIR$/Assets/ValZay.CardGame/Scripts/StretchedHeader.cs" />
         <option value="$PROJECT_DIR$/Assets/ValZay.CardGame/Scripts/GameHeader.cs" />
         <option value="$PROJECT_DIR$/Assets/ValZay.CardGame/Scripts/Header.cs" />
-        <option value="$PROJECT_DIR$/Assets/ValZay.CardGame/Scripts/SafeArea.cs" />
         <option value="$PROJECT_DIR$/Assets/ValZay.CardGame/Scripts/Hand.cs" />
         <option value="$PROJECT_DIR$/Assets/ValZay.CardGame/Scripts/Deck.cs" />
         <option value="$PROJECT_DIR$/Assets/ValZay.CardGame/Scripts/Card.cs" />
         <option value="$PROJECT_DIR$/Assets/ValZay.CardGame/Scripts/HandSetup.cs" />
         <option value="$PROJECT_DIR$/Assets/ValZay.CardGame/Scripts/HandView.cs" />
+        <option value="$PROJECT_DIR$/Assets/ValZay.CardGame/Scripts/SafeArea.cs" />
       </list>
     </option>
   </component>
@@ -87,10 +89,10 @@
       </option>
       <method v="2" />
     </configuration>
-    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" ignored-value-for-modified-check="230080">
+    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" ignored-value-for-modified-check="207192">
       <option name="allowRunningInParallel" value="false" />
       <option name="listenPortForConnections" value="false" />
-      <option name="pid" value="230080" />
+      <option name="pid" value="207192" />
       <option name="selectedOptions">
         <set />
       </option>
@@ -109,6 +111,7 @@
       <workItem from="1611809006249" duration="21730000" />
       <workItem from="1611843305366" duration="1480000" />
       <workItem from="1611980662956" duration="24379000" />
+      <workItem from="1612066357334" duration="1427000" />
     </task>
     <servers />
   </component>
@@ -133,53 +136,53 @@
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="-892" y="528" width="692" height="592" key="#xdebugger.evaluate" timestamp="1612001754198">
+    <state x="-892" y="528" width="692" height="592" key="#xdebugger.evaluate" timestamp="1612067759348">
       <screen x="-1920" y="80" width="1920" height="1040" />
     </state>
-    <state x="-892" y="528" width="692" height="592" key="#xdebugger.evaluate/0.0.1536.824/-1920.80.1920.1040@-1920.80.1920.1040" timestamp="1612001754198" />
+    <state x="-892" y="528" width="692" height="592" key="#xdebugger.evaluate/0.0.1536.824/-1920.80.1920.1040@-1920.80.1920.1040" timestamp="1612067759348" />
     <state width="933" height="464" key="DebuggerActiveHint" timestamp="1612007191250">
       <screen x="-1920" y="80" width="1920" height="1040" />
     </state>
     <state width="933" height="464" key="DebuggerActiveHint/0.0.1536.824/-1920.80.1920.1040@-1920.80.1920.1040" timestamp="1612007191250" />
-    <state width="1877" height="176" key="GridCell.Tab.0.bottom" timestamp="1612007158753">
+    <state width="1877" height="176" key="GridCell.Tab.0.bottom" timestamp="1612067516883">
       <screen x="-1920" y="80" width="1920" height="1040" />
     </state>
-    <state width="1877" height="176" key="GridCell.Tab.0.bottom/0.0.1536.824/-1920.80.1920.1040@-1920.80.1920.1040" timestamp="1612007158753" />
+    <state width="1877" height="176" key="GridCell.Tab.0.bottom/0.0.1536.824/-1920.80.1920.1040@-1920.80.1920.1040" timestamp="1612067516883" />
     <state width="1493" height="176" key="GridCell.Tab.0.bottom/0.0.1536.824/-1920.80.1920.1040@0.0.1536.824" timestamp="1611982936902" />
-    <state width="1877" height="176" key="GridCell.Tab.0.center" timestamp="1612007158753">
+    <state width="1877" height="176" key="GridCell.Tab.0.center" timestamp="1612067516883">
       <screen x="-1920" y="80" width="1920" height="1040" />
     </state>
-    <state width="1877" height="176" key="GridCell.Tab.0.center/0.0.1536.824/-1920.80.1920.1040@-1920.80.1920.1040" timestamp="1612007158753" />
+    <state width="1877" height="176" key="GridCell.Tab.0.center/0.0.1536.824/-1920.80.1920.1040@-1920.80.1920.1040" timestamp="1612067516883" />
     <state width="1493" height="176" key="GridCell.Tab.0.center/0.0.1536.824/-1920.80.1920.1040@0.0.1536.824" timestamp="1611982936902" />
-    <state width="1877" height="176" key="GridCell.Tab.0.left" timestamp="1612007158753">
+    <state width="1877" height="176" key="GridCell.Tab.0.left" timestamp="1612067516882">
       <screen x="-1920" y="80" width="1920" height="1040" />
     </state>
-    <state width="1877" height="176" key="GridCell.Tab.0.left/0.0.1536.824/-1920.80.1920.1040@-1920.80.1920.1040" timestamp="1612007158753" />
+    <state width="1877" height="176" key="GridCell.Tab.0.left/0.0.1536.824/-1920.80.1920.1040@-1920.80.1920.1040" timestamp="1612067516882" />
     <state width="1493" height="176" key="GridCell.Tab.0.left/0.0.1536.824/-1920.80.1920.1040@0.0.1536.824" timestamp="1611982936902" />
-    <state width="1877" height="176" key="GridCell.Tab.0.right" timestamp="1612007158753">
+    <state width="1877" height="176" key="GridCell.Tab.0.right" timestamp="1612067516883">
       <screen x="-1920" y="80" width="1920" height="1040" />
     </state>
-    <state width="1877" height="176" key="GridCell.Tab.0.right/0.0.1536.824/-1920.80.1920.1040@-1920.80.1920.1040" timestamp="1612007158753" />
+    <state width="1877" height="176" key="GridCell.Tab.0.right/0.0.1536.824/-1920.80.1920.1040@-1920.80.1920.1040" timestamp="1612067516883" />
     <state width="1493" height="176" key="GridCell.Tab.0.right/0.0.1536.824/-1920.80.1920.1040@0.0.1536.824" timestamp="1611982936902" />
-    <state width="1877" height="176" key="GridCell.Tab.1.bottom" timestamp="1612007171726">
+    <state width="1877" height="176" key="GridCell.Tab.1.bottom" timestamp="1612067521135">
       <screen x="-1920" y="80" width="1920" height="1040" />
     </state>
-    <state width="1877" height="176" key="GridCell.Tab.1.bottom/0.0.1536.824/-1920.80.1920.1040@-1920.80.1920.1040" timestamp="1612007171726" />
+    <state width="1877" height="176" key="GridCell.Tab.1.bottom/0.0.1536.824/-1920.80.1920.1040@-1920.80.1920.1040" timestamp="1612067521135" />
     <state width="1493" height="176" key="GridCell.Tab.1.bottom/0.0.1536.824/-1920.80.1920.1040@0.0.1536.824" timestamp="1611982936902" />
-    <state width="1877" height="176" key="GridCell.Tab.1.center" timestamp="1612007171726">
+    <state width="1877" height="176" key="GridCell.Tab.1.center" timestamp="1612067521135">
       <screen x="-1920" y="80" width="1920" height="1040" />
     </state>
-    <state width="1877" height="176" key="GridCell.Tab.1.center/0.0.1536.824/-1920.80.1920.1040@-1920.80.1920.1040" timestamp="1612007171726" />
+    <state width="1877" height="176" key="GridCell.Tab.1.center/0.0.1536.824/-1920.80.1920.1040@-1920.80.1920.1040" timestamp="1612067521135" />
     <state width="1493" height="176" key="GridCell.Tab.1.center/0.0.1536.824/-1920.80.1920.1040@0.0.1536.824" timestamp="1611982936902" />
-    <state width="1877" height="176" key="GridCell.Tab.1.left" timestamp="1612007171726">
+    <state width="1877" height="176" key="GridCell.Tab.1.left" timestamp="1612067521135">
       <screen x="-1920" y="80" width="1920" height="1040" />
     </state>
-    <state width="1877" height="176" key="GridCell.Tab.1.left/0.0.1536.824/-1920.80.1920.1040@-1920.80.1920.1040" timestamp="1612007171726" />
+    <state width="1877" height="176" key="GridCell.Tab.1.left/0.0.1536.824/-1920.80.1920.1040@-1920.80.1920.1040" timestamp="1612067521135" />
     <state width="1493" height="176" key="GridCell.Tab.1.left/0.0.1536.824/-1920.80.1920.1040@0.0.1536.824" timestamp="1611982936902" />
-    <state width="1877" height="176" key="GridCell.Tab.1.right" timestamp="1612007171726">
+    <state width="1877" height="176" key="GridCell.Tab.1.right" timestamp="1612067521135">
       <screen x="-1920" y="80" width="1920" height="1040" />
     </state>
-    <state width="1877" height="176" key="GridCell.Tab.1.right/0.0.1536.824/-1920.80.1920.1040@-1920.80.1920.1040" timestamp="1612007171726" />
+    <state width="1877" height="176" key="GridCell.Tab.1.right/0.0.1536.824/-1920.80.1920.1040@-1920.80.1920.1040" timestamp="1612067521135" />
     <state width="1493" height="176" key="GridCell.Tab.1.right/0.0.1536.824/-1920.80.1920.1040@0.0.1536.824" timestamp="1611982936902" />
     <state width="1877" height="176" key="GridCell.Tab.2.bottom" timestamp="1612007158603">
       <screen x="-1920" y="80" width="1920" height="1040" />
@@ -230,78 +233,39 @@
           <line>54</line>
           <properties documentPath="D:\UnityProjects\CardGame\Assets\ValZay.CardGame\Scripts\SafeArea.cs" initialLine="49">
             <startOffsets>
-              <option value="1423" />
+              <option value="1427" />
             </startOffsets>
             <endOffsets>
-              <option value="1424" />
+              <option value="1428" />
             </endOffsets>
           </properties>
           <option name="timeStamp" value="8" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
           <url>file://$PROJECT_DIR$/Assets/ValZay.CardGame/Scripts/HandView.cs</url>
-          <line>67</line>
-          <properties documentPath="D:\UnityProjects\CardGame\Assets\ValZay.CardGame\Scripts\HandView.cs" initialLine="48">
-            <startOffsets>
-              <option value="2293" />
-            </startOffsets>
-            <endOffsets>
-              <option value="2294" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="14" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/Assets/ValZay.CardGame/Scripts/HandView.cs</url>
-          <line>95</line>
+          <line>100</line>
           <properties documentPath="D:\UnityProjects\CardGame\Assets\ValZay.CardGame\Scripts\HandView.cs" initialLine="72">
             <startOffsets>
-              <option value="3392" />
+              <option value="3722" />
             </startOffsets>
             <endOffsets>
-              <option value="3393" />
+              <option value="3723" />
             </endOffsets>
           </properties>
           <option name="timeStamp" value="16" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/Assets/ValZay.CardGame/Scripts/HandView.cs</url>
-          <line>53</line>
-          <properties documentPath="D:\UnityProjects\CardGame\Assets\ValZay.CardGame\Scripts\HandView.cs" initialLine="49">
+          <url>file://$PROJECT_DIR$/Assets/ValZay.CardGame/Scripts/SafeArea.cs</url>
+          <line>33</line>
+          <properties documentPath="D:\UnityProjects\CardGame\Assets\ValZay.CardGame\Scripts\SafeArea.cs" initialLine="33">
             <startOffsets>
-              <option value="1900" />
+              <option value="693" />
             </startOffsets>
             <endOffsets>
-              <option value="1914" />
+              <option value="746" />
             </endOffsets>
           </properties>
-          <option name="timeStamp" value="17" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/Assets/ValZay.CardGame/Scripts/HandView.cs</url>
-          <line>31</line>
-          <properties documentPath="D:\UnityProjects\CardGame\Assets\ValZay.CardGame\Scripts\HandView.cs" initialLine="31">
-            <startOffsets>
-              <option value="971" />
-            </startOffsets>
-            <endOffsets>
-              <option value="1006" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="19" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/Assets/ValZay.CardGame/Scripts/HandSetup.cs</url>
-          <line>51</line>
-          <properties documentPath="D:\UnityProjects\CardGame\Assets\ValZay.CardGame\Scripts\HandSetup.cs" initialLine="49">
-            <startOffsets>
-              <option value="1815" />
-            </startOffsets>
-            <endOffsets>
-              <option value="1845" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="20" />
+          <option name="timeStamp" value="21" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

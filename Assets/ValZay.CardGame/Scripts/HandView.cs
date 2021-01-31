@@ -17,6 +17,7 @@ namespace ValZay.CardGame
         [SerializeField] private Transform rightMarker;
         [SerializeField] private Transform cardsInstantiationStart;
         [SerializeField] private Transform handCardsParent;
+        [SerializeField] private Sprite backSprite;
         
         private Card[] deck;
         private string[] cardsInHand;
@@ -75,6 +76,10 @@ namespace ValZay.CardGame
                 if (cardToInstantiate != null)
                 {
                     var instance = InstantiateCard(cardToInstantiate, offsetX, offsetZ);
+                    instance.GetComponent<SpriteRenderer>().sprite = backSprite;
+                    yield return new WaitForSeconds(0.1f);
+                    instance.GetComponent<SpriteRenderer>().sprite = cardToInstantiate.CardPrefab.GetComponent<SpriteRenderer>().sprite;
+
 
                     var active = cardToInstantiate.Suit == activeSuit;
                     if (active)

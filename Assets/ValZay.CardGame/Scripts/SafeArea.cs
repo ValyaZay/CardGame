@@ -30,16 +30,18 @@ namespace ValZay.CardGame
         {
             if (panelSafeArea == null)
                 return;
-            
+             
             ConvertPixelsToNormalizedCoordinate(Screen.safeArea);
         }
 
         private void ConvertPixelsToNormalizedCoordinate(Rect safeArea)
         {
             Rect canvasArea = canvas.pixelRect;
-            if (safeArea.height > canvasArea.height)
+            if (safeArea.height > canvasArea.height && safeArea.width > canvasArea.width)
             {
                 safeArea.height = canvasArea.height;
+                safeArea.width = canvasArea.width;
+                safeArea.position = new Vector2(0, 0);
             }
             
             Vector2 anchorMin = safeArea.position;
