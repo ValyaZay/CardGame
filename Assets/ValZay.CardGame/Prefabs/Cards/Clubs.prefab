@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8702101056942719329}
   - component: {fileID: 8702101056942719328}
+  - component: {fileID: -3869323682954006474}
   m_Layer: 0
   m_Name: Clubs
   m_TagString: Untagged
@@ -81,3 +82,17 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &-3869323682954006474
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8702101056942719335}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fd45534ffb344359a72cfef7b9293f7a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  target: {fileID: 642766651185109244, guid: 488a645d7667ffa4fa24e54da9e9e6e9, type: 3}
+  speed: 5

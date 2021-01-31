@@ -91,7 +91,7 @@ namespace ValZay.CardGame
                 {
                     var instance = InstantiateCard(cardToInstantiate, offsetX, offsetZ);
                     instance.GetComponent<SpriteRenderer>().sprite = backSprite;
-                    yield return new WaitForSeconds(0.1f);
+                    yield return new WaitForSeconds(0.2f);
                     instance.GetComponent<SpriteRenderer>().sprite = cardToInstantiate.CardPrefab.GetComponent<SpriteRenderer>().sprite;
 
 
@@ -100,6 +100,7 @@ namespace ValZay.CardGame
                     {
                         offsetX += activeCardOffsetX;
                         instance.GetComponent<SpriteRenderer>().color = Color.white;
+                        instance.AddComponent<BoxCollider2D>();
                     }
                     else
                     {
@@ -107,7 +108,7 @@ namespace ValZay.CardGame
                         instance.GetComponent<SpriteRenderer>().color = Color.grey;
                     } 
                     
-                    yield return new WaitForSeconds(0.1f);
+                    yield return new WaitForSeconds(0.2f);
                     
                     offsetZ += OffsetZ;
                 }
@@ -124,5 +125,6 @@ namespace ValZay.CardGame
                 handCardsParent);
             return instance;
         }
+        
     }
 }

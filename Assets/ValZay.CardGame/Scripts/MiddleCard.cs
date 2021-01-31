@@ -14,10 +14,10 @@ namespace ValZay.CardGame
         
         void Start()
         {
-            StartCoroutine(MoveToCenter());
+            StartCoroutine(Move());
         }
 
-        IEnumerator MoveToCenter()
+        IEnumerator Move()
         {
             float step =  speed * Time.deltaTime;
 
