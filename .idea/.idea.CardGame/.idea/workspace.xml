@@ -73,11 +73,11 @@
         <option value="$PROJECT_DIR$/Assets/ValZay.CardGame/Scripts/Hand.cs" />
         <option value="$PROJECT_DIR$/Assets/ValZay.CardGame/Scripts/Deck.cs" />
         <option value="$PROJECT_DIR$/Assets/ValZay.CardGame/Scripts/Card.cs" />
-        <option value="$PROJECT_DIR$/Assets/ValZay.CardGame/Scripts/HandSetup.cs" />
         <option value="$PROJECT_DIR$/Assets/ValZay.CardGame/Scripts/SafeArea.cs" />
         <option value="$PROJECT_DIR$/Assets/ValZay.CardGame/Scripts/CardInstance.cs" />
         <option value="$PROJECT_DIR$/Assets/ValZay.CardGame/Scripts/MiddleCard.cs" />
         <option value="$PROJECT_DIR$/Assets/ValZay.CardGame/Scripts/CardController.cs" />
+        <option value="$PROJECT_DIR$/Assets/ValZay.CardGame/Scripts/HandSetup.cs" />
         <option value="$PROJECT_DIR$/Assets/ValZay.CardGame/Scripts/HandView.cs" />
       </list>
     </option>

@@ -67,7 +67,7 @@ namespace ValZay.CardGame
                 
                 var instanceToRemove = activeCardsInstances.Find(i => Mathf.Approximately(i.transform.position.x, position.x));
                 activeCardsInstances.Remove(instanceToRemove);
-                if (activeCardsInstances.Count > 1)
+                if (activeCardsInstances.Count > 0)
                 {
                     StartCoroutine(RelocateActiveCards());
                 }
@@ -132,7 +132,12 @@ namespace ValZay.CardGame
             {
                 distanceOccupiedByActiveCards += FadedCardOffsetX;
             }
-            var recalculatedOffset = (distanceOccupiedByActiveCards) / activeCardsCount;
+
+            var recalculatedOffset = slidingOffsetX;
+            if (activeCardsCount > 1)
+            {
+                recalculatedOffset = distanceOccupiedByActiveCards / activeCardsCount;
+            }
             Debug.Log("New offset = " + recalculatedOffset);
             for (int index = 0; index < activeCardsInstances.Count; index++)
             {
@@ -152,7 +157,7 @@ namespace ValZay.CardGame
                 offset += recalculatedOffset;
             }
 
-            slidingOffsetX = recalculatedOffset;
+            slidingOffsetX = recalculatedOffset < 1f ? recalculatedOffset : 1f;
             Debug.Log("Sliding offset = " + slidingOffsetX);
         }
 
