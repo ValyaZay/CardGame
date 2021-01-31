@@ -35,6 +35,10 @@ namespace ValZay.CardGame
         private float distanceOccupiedByActiveCards;
         private Vector3 firstActiveCardPosition;
         private List<GameObject> activeCardsInstances = new List<GameObject>();
+        private List<GameObject> fadedCardsInstancesSecondPart = new List<GameObject>();
+        private bool activeIsLastCardInHand;
+        private Vector3 lastActiveCardPosition;
+        private float slidingOffsetX;
 
         private void Awake()
         {
@@ -67,26 +71,77 @@ namespace ValZay.CardGame
                 {
                     StartCoroutine(RelocateActiveCards());
                 }
-
-                // foreach (var card in activeCardsInstances)
-                // {
-                //     Debug.Log("Active cards positions" + card.transform.position);
-                // }
+                if (fadedCardsInstancesSecondPart.Count != 0 && activeCardsInstances.Count <= 1)
+                {
+                    StartCoroutine(RelocateFadedCards());
+                }
             }
+        }
+
+        private IEnumerator RelocateFadedCards()
+        {
+            yield return StartCoroutine(RelocateFirstFadedCardAfterActive());
             
+            var offset = FadedCardOffsetX;
+            for (int index = 1; index < fadedCardsInstancesSecondPart.Count; index++)
+            {
+                var targetPosition = new Vector3(
+                    fadedCardsInstancesSecondPart[0].transform.position.x + offset,
+                    fadedCardsInstancesSecondPart[index].transform.position.y,
+                    fadedCardsInstancesSecondPart[index].transform.position.z);
+                                                                         
+                while (Vector3.Distance(fadedCardsInstancesSecondPart[index].transform.position, targetPosition) > 0.001f)
+                {
+                    fadedCardsInstancesSecondPart[index].transform.position = Vector3.MoveTowards(fadedCardsInstancesSecondPart[index].transform.position,
+                        targetPosition, 3f * Time.deltaTime);
+                    yield return null;
+                }
+
+                offset += FadedCardOffsetX;
+            }
+        }
+
+        private IEnumerator RelocateFirstFadedCardAfterActive()
+        {
+            var targetPositionWithSlidingOffset = new Vector3(firstActiveCardPosition.x + slidingOffsetX,
+                fadedCardsInstancesSecondPart[0].transform.position.y, fadedCardsInstancesSecondPart[0].transform.position.z);
+            var targetPositionWithDefaultFadedOffset = new Vector3(firstActiveCardPosition.x + FadedCardOffsetX,
+                fadedCardsInstancesSecondPart[0].transform.position.y, fadedCardsInstancesSecondPart[0].transform.position.z);
+
+            var targetPosition = activeCardsInstances.Count == 1
+                ? targetPositionWithSlidingOffset
+                : targetPositionWithDefaultFadedOffset;
             
-            Debug.Log("Remaining cards in hand = " + cardsInHand.Count);
+            while (Vector3.Distance(fadedCardsInstancesSecondPart[0].transform.position, targetPosition) > 0.001f)
+            {
+                fadedCardsInstancesSecondPart[0].transform.position = Vector3.MoveTowards(fadedCardsInstancesSecondPart[0].transform.position,
+                    targetPosition, 2f * Time.deltaTime);
+                yield return null;
+            }
+        }
+
+        private void SaveLastActiveCardPosition(GameObject lastActiveCardInstance)
+        {
+            lastActiveCardPosition = lastActiveCardInstance.transform.position;
         }
 
         private IEnumerator RelocateActiveCards()
         {
-            var offset = 0f;
+            slidingOffsetX = 0f;
+            if (activeIsLastCardInHand)
+            {
+                distanceOccupiedByActiveCards += FadedCardOffsetX;
+            }
             var recalculatedOffset = (distanceOccupiedByActiveCards) / activeCardsCount;
             Debug.Log("Active Cards count " + activeCardsCount);
             Debug.Log("New offset = " + recalculatedOffset);
             for (int index = 0; index < activeCardsInstances.Count; index++)
             {
-                var targetPosition = new Vector3(firstActiveCardPosition.x + offset, firstActiveCardPosition.y,
+                // if (activeCardsInstances.Count == 2)
+                // {
+                    SaveLastActiveCardPosition(activeCardsInstances[activeCardsInstances.Count - 1]);
+                //}
+                var targetPosition = new Vector3(firstActiveCardPosition.x + slidingOffsetX, firstActiveCardPosition.y,
                     activeCardsInstances[index].transform.position.z);
                 while (Vector3.Distance(activeCardsInstances[index].transform.position, targetPosition) > 0.001f)
                 {
@@ -95,7 +150,7 @@ namespace ValZay.CardGame
                     yield return null;
                 }
 
-                offset += recalculatedOffset;
+                slidingOffsetX += recalculatedOffset;
                 
             }
         }
@@ -109,7 +164,7 @@ namespace ValZay.CardGame
         {
             var distanceBetweenMarkers = CalculateDistanceBetweenMarkers(leftMarker.position.x, rightMarker.position.x);
             var distanceOccupiedByFadedCards = fadedCardsCount * FadedCardOffsetX;
-            var activeIsLastCardInHand = cardsInHand[cardsInHand.Count - 1] == activeSuit;
+            activeIsLastCardInHand = cardsInHand[cardsInHand.Count - 1] == activeSuit;
             distanceOccupiedByActiveCards = distanceBetweenMarkers - distanceOccupiedByFadedCards;
             if (activeIsLastCardInHand)
             {
@@ -137,7 +192,7 @@ namespace ValZay.CardGame
             
             var offsetX = 0f;
             var offsetZ = 0f;
-            var firstActive = true;
+            var activePartStarted = true;
             for (int index = 0; index < cardsInHand.Count; index++)
             {
                 var cardToInstantiate = deck.Where(c => c.Suit.Contains(cardsInHand[index])).FirstOrDefault(); //
@@ -153,13 +208,13 @@ namespace ValZay.CardGame
                     
                     if (active)
                     {
-                        while (firstActive)
+                        while (activePartStarted)
                         {
                             var instancePosition = instance.transform.position;
                             firstActiveCardPosition = new Vector3(instancePosition.x,
                                                                     instancePosition.y,
                                                                     instancePosition.z);
-                            firstActive = false;
+                            activePartStarted = false;
                         }
                         offsetX += activeCardOffsetX;
                         instance.GetComponent<SpriteRenderer>().color = Color.white;
@@ -170,6 +225,10 @@ namespace ValZay.CardGame
                     {
                         offsetX += FadedCardOffsetX;
                         instance.GetComponent<SpriteRenderer>().color = Color.grey;
+                        if (!activeIsLastCardInHand && !activePartStarted)
+                        {
+                            SaveFadedCardsAfterActivePart(instance);
+                        }
                     } 
                     
                     yield return new WaitForSeconds(0.2f);
@@ -177,6 +236,11 @@ namespace ValZay.CardGame
                     offsetZ += OffsetZ;
                 }
             }
+        }
+
+        private void SaveFadedCardsAfterActivePart(GameObject instance)
+        {
+            fadedCardsInstancesSecondPart.Add(instance);
         }
 
         private GameObject InstantiateCard(Card cardToInstantiate, float offsetX, float offsetZ)
