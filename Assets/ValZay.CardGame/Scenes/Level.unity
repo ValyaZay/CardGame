@@ -586,6 +586,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   handSetup: {fileID: 57866419}
+  middleCard: {fileID: 1603639781}
   leftMarker: {fileID: 3686212606769252922, guid: 4f97cc80f8f889546907561f638acbf0,
     type: 3}
   rightMarker: {fileID: 5319783070050534186, guid: 42c568b6954ba364d96d0109674ca444,
@@ -836,8 +837,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 3686212606769252922, guid: 4f834bed3e063744e87d416b029c063b, type: 3}
-  speed: 5
-  timeToWait: 3
+  speed: 3
 --- !u!1 &1823730460
 GameObject:
   m_ObjectHideFlags: 0
