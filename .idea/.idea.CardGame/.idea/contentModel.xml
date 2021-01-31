@@ -9,6 +9,7 @@
           <e p="Scripts" t="Include">
             <e p="Card.cs" t="Include" />
             <e p="CardController.cs" t="Include" />
+            <e p="CustomTablePrefs.cs" t="Include" />
             <e p="HandSetup.cs" t="Include" />
             <e p="HandView.cs" t="Include" />
             <e p="Header.cs" t="Include" />
@@ -16,6 +17,7 @@
             <e p="MiddleCard.cs" t="Include" />
             <e p="SafeArea.cs" t="Include" />
             <e p="ScoreView.cs" t="Include" />
+            <e p="Table.cs" t="Include" />
           </e>
           <e p="Shaders" t="Include">
             <e p="HeaderStretch.shader" t="Include" />
