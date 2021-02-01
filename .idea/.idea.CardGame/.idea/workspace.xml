@@ -24,22 +24,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d25d63e9-956f-4e76-8489-a01cbb5329ef" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.CardGame/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.CardGame/.idea/contentModel.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.CardGame/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.CardGame/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ValZay.CardGame/Materials.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ValZay.CardGame/Materials/HeaderStretchMaterial.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ValZay.CardGame/Materials/HeaderStretchMaterial.mat.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ValZay.CardGame/Scenes/Level.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ValZay.CardGame/Scenes/Level.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ValZay.CardGame/Scenes/Splash.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ValZay.CardGame/Scenes/Splash.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ValZay.CardGame/Scripts/Card.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ValZay.CardGame/Scripts/Card.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ValZay.CardGame/Scripts/CustomTablePrefs.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ValZay.CardGame/Scripts/CustomTablePrefs.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ValZay.CardGame/Scripts/HandView.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ValZay.CardGame/Scripts/HandView.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ValZay.CardGame/Scripts/TableController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ValZay.CardGame/Scripts/TableController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ValZay.CardGame/Shaders.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ValZay.CardGame/Shaders/HeaderStretch.shader" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ValZay.CardGame/Shaders/HeaderStretch.shader.meta" beforeDir="false" />
-    </list>
+    <list default="true" id="d25d63e9-956f-4e76-8489-a01cbb5329ef" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -135,7 +120,7 @@
       <workItem from="1611843305366" duration="1480000" />
       <workItem from="1611980662956" duration="24379000" />
       <workItem from="1612066357334" duration="3716000" />
-      <workItem from="1612152199696" duration="7299000" />
+      <workItem from="1612152199696" duration="8012000" />
     </task>
     <servers />
   </component>

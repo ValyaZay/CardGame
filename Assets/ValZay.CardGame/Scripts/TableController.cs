@@ -35,6 +35,11 @@ namespace ValZay.CardGame
             customTablePrefs.TableChosen += SetTableView;
         }
 
+        private void OnDestroy()
+        {
+            customTablePrefs.TableChosen -= SetTableView;
+        }
+
         private void SetTableView(string spriteName)
         {
             var sprite = tableSprites.FirstOrDefault(s => s.name == spriteName);
