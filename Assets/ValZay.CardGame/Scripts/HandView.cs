@@ -52,9 +52,13 @@ namespace ValZay.CardGame
         void Start()
         {
             middleCard.Arrived += ToggleMiddleCardArrived;
-            //cardController.PlayedCardDestroyed += RemoveCardFromHandCollection;
             activeCardOffsetX = CalculateActiveCardOffsetX();
-            StartCoroutine(SetCardWidthAndColor());
+            StartCoroutine(SetCard());
+        }
+
+        private void OnDestroy()
+        {
+            middleCard.Arrived -= ToggleMiddleCardArrived;
         }
 
         public void RemoveCardFromHandCollection(Vector3 position)
@@ -138,7 +142,7 @@ namespace ValZay.CardGame
             {
                 recalculatedOffset = distanceOccupiedByActiveCards / activeCardsCount;
             }
-            Debug.Log("New offset = " + recalculatedOffset);
+            
             for (int index = 0; index < activeCardsInstances.Count; index++)
             {
                 // if (activeCardsInstances.Count == 2)
@@ -158,7 +162,6 @@ namespace ValZay.CardGame
             }
 
             slidingOffsetX = recalculatedOffset < 1f ? recalculatedOffset : 1f;
-            Debug.Log("Sliding offset = " + slidingOffsetX);
         }
 
         private void ToggleMiddleCardArrived()
@@ -178,7 +181,6 @@ namespace ValZay.CardGame
             }
             
             var offset = (distanceOccupiedByActiveCards) / activeCardsCount;
-            Debug.Log("Initial Offset active " + offset);
             return offset;
         }
 
@@ -188,11 +190,10 @@ namespace ValZay.CardGame
             var minX = leftX < rightX ? leftX: rightX;
 
             var distance = maxX - minX;
-            Debug.Log(distance);
             return distance;
         }
 
-        IEnumerator SetCardWidthAndColor()
+        IEnumerator SetCard()
         {
             yield return new WaitUntil(() => middleCardArrived == true);
             

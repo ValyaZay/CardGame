@@ -27,6 +27,15 @@
     <list default="true" id="d25d63e9-956f-4e76-8489-a01cbb5329ef" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.CardGame/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.CardGame/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.CardGame/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.CardGame/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ValZay.CardGame/Scripts/CardController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ValZay.CardGame/Scripts/CardController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ValZay.CardGame/Scripts/CustomTablePrefs.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ValZay.CardGame/Scripts/CustomTablePrefs.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ValZay.CardGame/Scripts/HandSetup.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ValZay.CardGame/Scripts/HandSetup.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ValZay.CardGame/Scripts/HandView.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ValZay.CardGame/Scripts/HandView.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ValZay.CardGame/Scripts/MiddleCard.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ValZay.CardGame/Scripts/MiddleCard.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ValZay.CardGame/Scripts/SafeArea.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ValZay.CardGame/Scripts/SafeArea.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ValZay.CardGame/Scripts/ScoreView.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ValZay.CardGame/Scripts/ScoreView.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ValZay.CardGame/Scripts/Table.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ValZay.CardGame/Scripts/Table.cs.meta" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,29 +46,14 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/Assets/ValZay.CardGame/Scripts/ScoreView.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../Protokit/protokit/src/protokit-games/Assets/Games/SantaKlava/Scripts/Keys/Key.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/4AF5BEA1-B7B2-4424-94FD-73F6F9B3D7F4/29/1f4adebd/Canvas.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/ValZay.CardGame/Scripts/Table.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/8691AD70-05ED-4755-A182-8378FF0B52B1/1e/7e41433d/Screen.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/ValZay.CardGame/Scripts/LevelLoad.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/ValZay.CardGame/Scripts/HandView.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/ValZay.CardGame/Scripts/ScoreView.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/ValZay.CardGame/Scripts/MiddleCard.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/ValZay.CardGame/Scripts/LevelLoad.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/8691AD70-05ED-4755-A182-8378FF0B52B1/1f/4a3135d9/SetupCoroutine.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -75,17 +69,17 @@
         <option value="$PROJECT_DIR$/Assets/ValZay.CardGame/Scripts/Hand.cs" />
         <option value="$PROJECT_DIR$/Assets/ValZay.CardGame/Scripts/Deck.cs" />
         <option value="$PROJECT_DIR$/Assets/ValZay.CardGame/Scripts/Card.cs" />
-        <option value="$PROJECT_DIR$/Assets/ValZay.CardGame/Scripts/SafeArea.cs" />
         <option value="$PROJECT_DIR$/Assets/ValZay.CardGame/Scripts/CardInstance.cs" />
-        <option value="$PROJECT_DIR$/Assets/ValZay.CardGame/Scripts/MiddleCard.cs" />
-        <option value="$PROJECT_DIR$/Assets/ValZay.CardGame/Scripts/HandSetup.cs" />
-        <option value="$PROJECT_DIR$/Assets/ValZay.CardGame/Scripts/HandView.cs" />
-        <option value="$PROJECT_DIR$/Assets/ValZay.CardGame/Scripts/ScoreView.cs" />
-        <option value="$PROJECT_DIR$/Assets/ValZay.CardGame/Scripts/CardController.cs" />
         <option value="$PROJECT_DIR$/Assets/ValZay.CardGame/Scripts/Dialog.cs" />
         <option value="$PROJECT_DIR$/Assets/ValZay.CardGame/Scripts/CustomPrefs.cs" />
         <option value="$PROJECT_DIR$/Assets/ValZay.CardGame/Scripts/Table.cs" />
         <option value="$PROJECT_DIR$/Assets/ValZay.CardGame/Scripts/CustomTablePrefs.cs" />
+        <option value="$PROJECT_DIR$/Assets/ValZay.CardGame/Scripts/CardController.cs" />
+        <option value="$PROJECT_DIR$/Assets/ValZay.CardGame/Scripts/HandSetup.cs" />
+        <option value="$PROJECT_DIR$/Assets/ValZay.CardGame/Scripts/HandView.cs" />
+        <option value="$PROJECT_DIR$/Assets/ValZay.CardGame/Scripts/MiddleCard.cs" />
+        <option value="$PROJECT_DIR$/Assets/ValZay.CardGame/Scripts/SafeArea.cs" />
+        <option value="$PROJECT_DIR$/Assets/ValZay.CardGame/Scripts/ScoreView.cs" />
       </list>
     </option>
   </component>
@@ -113,10 +107,10 @@
       </option>
       <method v="2" />
     </configuration>
-    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" ignored-value-for-modified-check="207192">
+    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
       <option name="allowRunningInParallel" value="false" />
       <option name="listenPortForConnections" value="false" />
-      <option name="pid" value="207192" />
+      <option name="pid" />
       <option name="selectedOptions">
         <set />
       </option>
@@ -136,6 +130,7 @@
       <workItem from="1611843305366" duration="1480000" />
       <workItem from="1611980662956" duration="24379000" />
       <workItem from="1612066357334" duration="3716000" />
+      <workItem from="1612152199696" duration="908000" />
     </task>
     <servers />
   </component>
@@ -168,85 +163,85 @@
       <screen x="-1920" y="80" width="1920" height="1040" />
     </state>
     <state width="933" height="464" key="DebuggerActiveHint/0.0.1536.824/-1920.80.1920.1040@-1920.80.1920.1040" timestamp="1612090348771" />
-    <state width="1877" height="176" key="GridCell.Tab.0.bottom" timestamp="1612092999321">
+    <state width="1877" height="176" key="GridCell.Tab.0.bottom" timestamp="1612097767054">
       <screen x="-1920" y="80" width="1920" height="1040" />
     </state>
-    <state width="1877" height="176" key="GridCell.Tab.0.bottom/0.0.1536.824/-1920.80.1920.1040@-1920.80.1920.1040" timestamp="1612092999321" />
+    <state width="1877" height="176" key="GridCell.Tab.0.bottom/0.0.1536.824/-1920.80.1920.1040@-1920.80.1920.1040" timestamp="1612097767054" />
     <state width="1493" height="176" key="GridCell.Tab.0.bottom/0.0.1536.824/-1920.80.1920.1040@0.0.1536.824" timestamp="1611982936902" />
-    <state width="1877" height="176" key="GridCell.Tab.0.center" timestamp="1612092999321">
+    <state width="1877" height="176" key="GridCell.Tab.0.center" timestamp="1612097767054">
       <screen x="-1920" y="80" width="1920" height="1040" />
     </state>
-    <state width="1877" height="176" key="GridCell.Tab.0.center/0.0.1536.824/-1920.80.1920.1040@-1920.80.1920.1040" timestamp="1612092999321" />
+    <state width="1877" height="176" key="GridCell.Tab.0.center/0.0.1536.824/-1920.80.1920.1040@-1920.80.1920.1040" timestamp="1612097767054" />
     <state width="1493" height="176" key="GridCell.Tab.0.center/0.0.1536.824/-1920.80.1920.1040@0.0.1536.824" timestamp="1611982936902" />
-    <state width="1877" height="176" key="GridCell.Tab.0.left" timestamp="1612092999321">
+    <state width="1877" height="176" key="GridCell.Tab.0.left" timestamp="1612097767054">
       <screen x="-1920" y="80" width="1920" height="1040" />
     </state>
-    <state width="1877" height="176" key="GridCell.Tab.0.left/0.0.1536.824/-1920.80.1920.1040@-1920.80.1920.1040" timestamp="1612092999321" />
+    <state width="1877" height="176" key="GridCell.Tab.0.left/0.0.1536.824/-1920.80.1920.1040@-1920.80.1920.1040" timestamp="1612097767054" />
     <state width="1493" height="176" key="GridCell.Tab.0.left/0.0.1536.824/-1920.80.1920.1040@0.0.1536.824" timestamp="1611982936902" />
-    <state width="1877" height="176" key="GridCell.Tab.0.right" timestamp="1612092999321">
+    <state width="1877" height="176" key="GridCell.Tab.0.right" timestamp="1612097767054">
       <screen x="-1920" y="80" width="1920" height="1040" />
     </state>
-    <state width="1877" height="176" key="GridCell.Tab.0.right/0.0.1536.824/-1920.80.1920.1040@-1920.80.1920.1040" timestamp="1612092999321" />
+    <state width="1877" height="176" key="GridCell.Tab.0.right/0.0.1536.824/-1920.80.1920.1040@-1920.80.1920.1040" timestamp="1612097767054" />
     <state width="1493" height="176" key="GridCell.Tab.0.right/0.0.1536.824/-1920.80.1920.1040@0.0.1536.824" timestamp="1611982936902" />
-    <state width="1877" height="176" key="GridCell.Tab.1.bottom" timestamp="1612093022015">
+    <state width="1877" height="176" key="GridCell.Tab.1.bottom" timestamp="1612097767054">
       <screen x="-1920" y="80" width="1920" height="1040" />
     </state>
-    <state width="1877" height="176" key="GridCell.Tab.1.bottom/0.0.1536.824/-1920.80.1920.1040@-1920.80.1920.1040" timestamp="1612093022015" />
+    <state width="1877" height="176" key="GridCell.Tab.1.bottom/0.0.1536.824/-1920.80.1920.1040@-1920.80.1920.1040" timestamp="1612097767054" />
     <state width="1493" height="176" key="GridCell.Tab.1.bottom/0.0.1536.824/-1920.80.1920.1040@0.0.1536.824" timestamp="1611982936902" />
-    <state width="1877" height="176" key="GridCell.Tab.1.center" timestamp="1612093022015">
+    <state width="1877" height="176" key="GridCell.Tab.1.center" timestamp="1612097767054">
       <screen x="-1920" y="80" width="1920" height="1040" />
     </state>
-    <state width="1877" height="176" key="GridCell.Tab.1.center/0.0.1536.824/-1920.80.1920.1040@-1920.80.1920.1040" timestamp="1612093022015" />
+    <state width="1877" height="176" key="GridCell.Tab.1.center/0.0.1536.824/-1920.80.1920.1040@-1920.80.1920.1040" timestamp="1612097767054" />
     <state width="1493" height="176" key="GridCell.Tab.1.center/0.0.1536.824/-1920.80.1920.1040@0.0.1536.824" timestamp="1611982936902" />
-    <state width="1877" height="176" key="GridCell.Tab.1.left" timestamp="1612093022015">
+    <state width="1877" height="176" key="GridCell.Tab.1.left" timestamp="1612097767054">
       <screen x="-1920" y="80" width="1920" height="1040" />
     </state>
-    <state width="1877" height="176" key="GridCell.Tab.1.left/0.0.1536.824/-1920.80.1920.1040@-1920.80.1920.1040" timestamp="1612093022015" />
+    <state width="1877" height="176" key="GridCell.Tab.1.left/0.0.1536.824/-1920.80.1920.1040@-1920.80.1920.1040" timestamp="1612097767054" />
     <state width="1493" height="176" key="GridCell.Tab.1.left/0.0.1536.824/-1920.80.1920.1040@0.0.1536.824" timestamp="1611982936902" />
-    <state width="1877" height="176" key="GridCell.Tab.1.right" timestamp="1612093022015">
+    <state width="1877" height="176" key="GridCell.Tab.1.right" timestamp="1612097767054">
       <screen x="-1920" y="80" width="1920" height="1040" />
     </state>
-    <state width="1877" height="176" key="GridCell.Tab.1.right/0.0.1536.824/-1920.80.1920.1040@-1920.80.1920.1040" timestamp="1612093022015" />
+    <state width="1877" height="176" key="GridCell.Tab.1.right/0.0.1536.824/-1920.80.1920.1040@-1920.80.1920.1040" timestamp="1612097767054" />
     <state width="1493" height="176" key="GridCell.Tab.1.right/0.0.1536.824/-1920.80.1920.1040@0.0.1536.824" timestamp="1611982936902" />
-    <state width="1877" height="176" key="GridCell.Tab.2.bottom" timestamp="1612092999117">
+    <state width="1877" height="176" key="GridCell.Tab.2.bottom" timestamp="1612097767054">
       <screen x="-1920" y="80" width="1920" height="1040" />
     </state>
-    <state width="1877" height="176" key="GridCell.Tab.2.bottom/0.0.1536.824/-1920.80.1920.1040@-1920.80.1920.1040" timestamp="1612092999117" />
+    <state width="1877" height="176" key="GridCell.Tab.2.bottom/0.0.1536.824/-1920.80.1920.1040@-1920.80.1920.1040" timestamp="1612097767054" />
     <state width="1493" height="176" key="GridCell.Tab.2.bottom/0.0.1536.824/-1920.80.1920.1040@0.0.1536.824" timestamp="1611982936902" />
-    <state width="1877" height="176" key="GridCell.Tab.2.center" timestamp="1612092999116">
+    <state width="1877" height="176" key="GridCell.Tab.2.center" timestamp="1612097767054">
       <screen x="-1920" y="80" width="1920" height="1040" />
     </state>
-    <state width="1877" height="176" key="GridCell.Tab.2.center/0.0.1536.824/-1920.80.1920.1040@-1920.80.1920.1040" timestamp="1612092999116" />
+    <state width="1877" height="176" key="GridCell.Tab.2.center/0.0.1536.824/-1920.80.1920.1040@-1920.80.1920.1040" timestamp="1612097767054" />
     <state width="1493" height="176" key="GridCell.Tab.2.center/0.0.1536.824/-1920.80.1920.1040@0.0.1536.824" timestamp="1611982936902" />
-    <state width="1877" height="176" key="GridCell.Tab.2.left" timestamp="1612092999116">
+    <state width="1877" height="176" key="GridCell.Tab.2.left" timestamp="1612097767054">
       <screen x="-1920" y="80" width="1920" height="1040" />
     </state>
-    <state width="1877" height="176" key="GridCell.Tab.2.left/0.0.1536.824/-1920.80.1920.1040@-1920.80.1920.1040" timestamp="1612092999116" />
+    <state width="1877" height="176" key="GridCell.Tab.2.left/0.0.1536.824/-1920.80.1920.1040@-1920.80.1920.1040" timestamp="1612097767054" />
     <state width="1493" height="176" key="GridCell.Tab.2.left/0.0.1536.824/-1920.80.1920.1040@0.0.1536.824" timestamp="1611982936902" />
-    <state width="1877" height="176" key="GridCell.Tab.2.right" timestamp="1612092999116">
+    <state width="1877" height="176" key="GridCell.Tab.2.right" timestamp="1612097767054">
       <screen x="-1920" y="80" width="1920" height="1040" />
     </state>
-    <state width="1877" height="176" key="GridCell.Tab.2.right/0.0.1536.824/-1920.80.1920.1040@-1920.80.1920.1040" timestamp="1612092999116" />
+    <state width="1877" height="176" key="GridCell.Tab.2.right/0.0.1536.824/-1920.80.1920.1040@-1920.80.1920.1040" timestamp="1612097767054" />
     <state width="1493" height="176" key="GridCell.Tab.2.right/0.0.1536.824/-1920.80.1920.1040@0.0.1536.824" timestamp="1611982936902" />
-    <state width="1877" height="176" key="GridCell.Tab.3.bottom" timestamp="1612092999117">
+    <state width="1877" height="176" key="GridCell.Tab.3.bottom" timestamp="1612097767054">
       <screen x="-1920" y="80" width="1920" height="1040" />
     </state>
-    <state width="1877" height="176" key="GridCell.Tab.3.bottom/0.0.1536.824/-1920.80.1920.1040@-1920.80.1920.1040" timestamp="1612092999117" />
+    <state width="1877" height="176" key="GridCell.Tab.3.bottom/0.0.1536.824/-1920.80.1920.1040@-1920.80.1920.1040" timestamp="1612097767054" />
     <state width="1493" height="176" key="GridCell.Tab.3.bottom/0.0.1536.824/-1920.80.1920.1040@0.0.1536.824" timestamp="1611982936903" />
-    <state width="1877" height="176" key="GridCell.Tab.3.center" timestamp="1612092999117">
+    <state width="1877" height="176" key="GridCell.Tab.3.center" timestamp="1612097767054">
       <screen x="-1920" y="80" width="1920" height="1040" />
     </state>
-    <state width="1877" height="176" key="GridCell.Tab.3.center/0.0.1536.824/-1920.80.1920.1040@-1920.80.1920.1040" timestamp="1612092999117" />
+    <state width="1877" height="176" key="GridCell.Tab.3.center/0.0.1536.824/-1920.80.1920.1040@-1920.80.1920.1040" timestamp="1612097767054" />
     <state width="1493" height="176" key="GridCell.Tab.3.center/0.0.1536.824/-1920.80.1920.1040@0.0.1536.824" timestamp="1611982936903" />
-    <state width="1877" height="176" key="GridCell.Tab.3.left" timestamp="1612092999117">
+    <state width="1877" height="176" key="GridCell.Tab.3.left" timestamp="1612097767054">
       <screen x="-1920" y="80" width="1920" height="1040" />
     </state>
-    <state width="1877" height="176" key="GridCell.Tab.3.left/0.0.1536.824/-1920.80.1920.1040@-1920.80.1920.1040" timestamp="1612092999117" />
+    <state width="1877" height="176" key="GridCell.Tab.3.left/0.0.1536.824/-1920.80.1920.1040@-1920.80.1920.1040" timestamp="1612097767054" />
     <state width="1493" height="176" key="GridCell.Tab.3.left/0.0.1536.824/-1920.80.1920.1040@0.0.1536.824" timestamp="1611982936903" />
-    <state width="1877" height="176" key="GridCell.Tab.3.right" timestamp="1612092999117">
+    <state width="1877" height="176" key="GridCell.Tab.3.right" timestamp="1612097767054">
       <screen x="-1920" y="80" width="1920" height="1040" />
     </state>
-    <state width="1877" height="176" key="GridCell.Tab.3.right/0.0.1536.824/-1920.80.1920.1040@-1920.80.1920.1040" timestamp="1612092999117" />
+    <state width="1877" height="176" key="GridCell.Tab.3.right/0.0.1536.824/-1920.80.1920.1040@-1920.80.1920.1040" timestamp="1612097767054" />
     <state width="1493" height="176" key="GridCell.Tab.3.right/0.0.1536.824/-1920.80.1920.1040@0.0.1536.824" timestamp="1611982936903" />
     <state x="-1368" y="333" key="Vcs.Push.Dialog.v2" timestamp="1612073865400">
       <screen x="-1920" y="80" width="1920" height="1040" />

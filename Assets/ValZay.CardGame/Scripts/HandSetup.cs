@@ -41,14 +41,12 @@ namespace ValZay.CardGame
         public int GetActiveCardsCount()
         {
             activeCards = chosenCardsForHand.Where(c => c == initialActiveSuit).ToList();
-            Debug.Log(activeCards.Count());
             return activeCards.Count();
         } 
         
         public int GetFadedCardsCount()
         {
             fadedCards = chosenCardsForHand.Where(c => c != initialActiveSuit).ToList();
-            Debug.Log(fadedCards.Count());
             return fadedCards.Count();
         }
         

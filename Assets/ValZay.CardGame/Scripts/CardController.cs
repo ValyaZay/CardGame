@@ -22,7 +22,6 @@ namespace ValZay.CardGame
          {
              handView.RemoveCardFromHandCollection(transform.position);
              StartCoroutine(Move());
-             
          }
 
         IEnumerator Move()
@@ -38,9 +37,6 @@ namespace ValZay.CardGame
             yield return new WaitForSeconds(2f);
             scoreView.UpdateScore();
             Destroy(gameObject);
-            
         }
-        
-        
     }
 }
