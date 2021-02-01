@@ -8,12 +8,18 @@ namespace ValZay.CardGame
 {
     public class CustomTablePrefs : MonoBehaviour
     {
+        public event Action<string> TableChosen; 
+        
         const string TABLE_SPRITE_KEY = "table";
-        const int TABLE_SPRITE = 0;
+        const string TABLE_SAMPLE = "DarkTable";
 
         [SerializeField] private Button button;
         [SerializeField] private Canvas customTableCanvas;
         [SerializeField] private Sprite[] tables;
+
+        private string[] tableSamples;
+
+        public Sprite[] Tables => tables;
 
         private void Start()
         {
@@ -27,20 +33,22 @@ namespace ValZay.CardGame
     
         }
 
-        public static void SetTable(int table)
+        public static void SetTable(string table)
         {
-            PlayerPrefs.SetInt(TABLE_SPRITE_KEY, table);
+            PlayerPrefs.SetString(TABLE_SPRITE_KEY, table);
         }
 
-        public static int GetTable()
+        public static string GetTable()
         {
-            return PlayerPrefs.GetInt(TABLE_SPRITE_KEY);
+            return PlayerPrefs.GetString(TABLE_SPRITE_KEY);
         }
 
         public void TableSampleClick()
         {
             customTableCanvas.gameObject.SetActive(false);
-            Debug.Log(EventSystem.current.currentSelectedGameObject.name);
+            var chosenTable = EventSystem.current.currentSelectedGameObject.name;
+            Debug.Log(chosenTable);
+            TableChosen?.Invoke(chosenTable);
         }
     }
 }

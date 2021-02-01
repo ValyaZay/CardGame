@@ -27,15 +27,12 @@
     <list default="true" id="d25d63e9-956f-4e76-8489-a01cbb5329ef" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.CardGame/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.CardGame/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.CardGame/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.CardGame/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ValZay.CardGame/Scripts/CardController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ValZay.CardGame/Scripts/CardController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ValZay.CardGame/Images/Table/table 2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ValZay.CardGame/Images/Table/table 2.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ValZay.CardGame/Images/Table/table.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ValZay.CardGame/Images/Table/table.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ValZay.CardGame/Scenes/Level.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ValZay.CardGame/Scenes/Level.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/ValZay.CardGame/Scripts/CustomTablePrefs.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ValZay.CardGame/Scripts/CustomTablePrefs.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ValZay.CardGame/Scripts/HandSetup.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ValZay.CardGame/Scripts/HandSetup.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ValZay.CardGame/Scripts/HandView.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ValZay.CardGame/Scripts/HandView.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ValZay.CardGame/Scripts/MiddleCard.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ValZay.CardGame/Scripts/MiddleCard.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ValZay.CardGame/Scripts/SafeArea.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ValZay.CardGame/Scripts/SafeArea.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ValZay.CardGame/Scripts/ScoreView.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ValZay.CardGame/Scripts/ScoreView.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ValZay.CardGame/Scripts/Table.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ValZay.CardGame/Scripts/Table.cs.meta" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,6 +49,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/ValZay.CardGame/Scripts/HandView.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/ValZay.CardGame/Scripts/ScoreView.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/ValZay.CardGame/Scripts/MiddleCard.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/ValZay.CardGame/Scripts/TableController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/ValZay.CardGame/Scripts/LevelLoad.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/8691AD70-05ED-4755-A182-8378FF0B52B1/1f/4a3135d9/SetupCoroutine.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
@@ -73,13 +71,14 @@
         <option value="$PROJECT_DIR$/Assets/ValZay.CardGame/Scripts/Dialog.cs" />
         <option value="$PROJECT_DIR$/Assets/ValZay.CardGame/Scripts/CustomPrefs.cs" />
         <option value="$PROJECT_DIR$/Assets/ValZay.CardGame/Scripts/Table.cs" />
-        <option value="$PROJECT_DIR$/Assets/ValZay.CardGame/Scripts/CustomTablePrefs.cs" />
         <option value="$PROJECT_DIR$/Assets/ValZay.CardGame/Scripts/CardController.cs" />
         <option value="$PROJECT_DIR$/Assets/ValZay.CardGame/Scripts/HandSetup.cs" />
         <option value="$PROJECT_DIR$/Assets/ValZay.CardGame/Scripts/HandView.cs" />
         <option value="$PROJECT_DIR$/Assets/ValZay.CardGame/Scripts/MiddleCard.cs" />
         <option value="$PROJECT_DIR$/Assets/ValZay.CardGame/Scripts/SafeArea.cs" />
         <option value="$PROJECT_DIR$/Assets/ValZay.CardGame/Scripts/ScoreView.cs" />
+        <option value="$PROJECT_DIR$/Assets/ValZay.CardGame/Scripts/CustomTablePrefs.cs" />
+        <option value="$PROJECT_DIR$/Assets/ValZay.CardGame/Scripts/TableController.cs" />
       </list>
     </option>
   </component>
@@ -130,7 +129,7 @@
       <workItem from="1611843305366" duration="1480000" />
       <workItem from="1611980662956" duration="24379000" />
       <workItem from="1612066357334" duration="3716000" />
-      <workItem from="1612152199696" duration="908000" />
+      <workItem from="1612152199696" duration="2909000" />
     </task>
     <servers />
   </component>

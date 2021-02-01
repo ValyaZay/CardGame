@@ -17,6 +17,7 @@
             <e p="MiddleCard.cs" t="Include" />
             <e p="SafeArea.cs" t="Include" />
             <e p="ScoreView.cs" t="Include" />
+            <e p="TableController.cs" t="Include" />
           </e>
           <e p="Shaders" t="Include">
             <e p="HeaderStretch.shader" t="Include" />
