@@ -6,26 +6,42 @@ namespace ValZay.CardGame
 {
     public class TableController : MonoBehaviour
     {
+        private const string DefaultTableSpriteName = "DarkTable";
+        
         [SerializeField] private CustomTablePrefs customTablePrefs;
         
         private SpriteRenderer spriteRenderer;
         private Sprite[] tableSprites;
+        
 
         private void Awake()
         {
             spriteRenderer = GetComponent<SpriteRenderer>();
+            tableSprites = customTablePrefs.Tables;
         }
 
-        void Start()
+        private void Start()
         {
-            tableSprites = customTablePrefs.Tables;
+            var tableSpriteInPrefs = customTablePrefs.GetTable();
+            if (String.IsNullOrEmpty(tableSpriteInPrefs))
+            {
+                SetTableView(DefaultTableSpriteName);
+            }
+            else
+            {
+                SetTableView(tableSpriteInPrefs);
+            }
+            
             customTablePrefs.TableChosen += SetTableView;
         }
 
-        private void SetTableView(string tableSprite)
+        private void SetTableView(string spriteName)
         {
-            var spriteToSet = tableSprites.FirstOrDefault(s => s.name == tableSprite);
-            spriteRenderer.sprite = spriteToSet;
+            var sprite = tableSprites.FirstOrDefault(s => s.name == spriteName);
+            if (spriteRenderer)
+            {
+                spriteRenderer.sprite = sprite;
+            }
         }
     }
 }

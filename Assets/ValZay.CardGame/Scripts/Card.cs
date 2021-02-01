@@ -8,7 +8,6 @@ namespace ValZay.CardGame
         [SerializeField] private GameObject cardPrefab;
         [SerializeField] private string suit;
         
-        private bool faded = true;
         public string Suit => suit;
 
         public GameObject CardPrefab => cardPrefab;

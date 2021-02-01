@@ -37,7 +37,6 @@ namespace ValZay.CardGame
         private List<GameObject> activeCardsInstances = new List<GameObject>();
         private List<GameObject> fadedCardsInstancesSecondPart = new List<GameObject>();
         private bool activeIsLastCardInHand;
-        private Vector3 lastActiveCardPosition;
         private float slidingOffsetX;
 
         private void Awake()
@@ -111,7 +110,7 @@ namespace ValZay.CardGame
                 fadedCardsInstancesSecondPart[0].transform.position.y, fadedCardsInstancesSecondPart[0].transform.position.z);
             var targetPositionWithDefaultFadedOffset = new Vector3(firstActiveCardPosition.x,
                 fadedCardsInstancesSecondPart[0].transform.position.y, fadedCardsInstancesSecondPart[0].transform.position.z);
-
+            
             var targetPosition = activeCardsInstances.Count == 1
                 ? targetPositionWithSlidingOffset
                 : targetPositionWithDefaultFadedOffset;
@@ -122,11 +121,6 @@ namespace ValZay.CardGame
                     targetPosition, 2f * Time.deltaTime);
                 yield return null;
             }
-        }
-
-        private void SaveLastActiveCardPosition(GameObject lastActiveCardInstance)
-        {
-            lastActiveCardPosition = lastActiveCardInstance.transform.position;
         }
 
         private IEnumerator RelocateActiveCards()
@@ -145,10 +139,6 @@ namespace ValZay.CardGame
             
             for (int index = 0; index < activeCardsInstances.Count; index++)
             {
-                // if (activeCardsInstances.Count == 2)
-                // {
-                    SaveLastActiveCardPosition(activeCardsInstances[activeCardsInstances.Count - 1]);
-                //}
                 var targetPosition = new Vector3(firstActiveCardPosition.x + offset, firstActiveCardPosition.y,
                     activeCardsInstances[index].transform.position.z);
                 while (Vector3.Distance(activeCardsInstances[index].transform.position, targetPosition) > 0.001f)

@@ -1,6 +1,5 @@
 ﻿using System;
 using UnityEngine;
-using UnityEngine.Events;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
 
@@ -10,7 +9,6 @@ namespace ValZay.CardGame
     {
         public event Action<string> TableChosen; 
         
-        const string TABLE_SPRITE_KEY = "table";
         const string TABLE_SAMPLE = "DarkTable";
 
         [SerializeField] private Button button;
@@ -21,34 +19,33 @@ namespace ValZay.CardGame
 
         public Sprite[] Tables => tables;
 
-        private void Start()
+        public void SetTable(string table)
         {
-            button.onClick.AddListener(ShowDialogCanvas);
-            var table = CustomTablePrefs.GetTable();
+            PlayerPrefs.SetString(TABLE_SAMPLE, table);
         }
 
-        private void ShowDialogCanvas()
+        public string GetTable()
         {
-            customTableCanvas.gameObject.SetActive(true);
-    
-        }
-
-        public static void SetTable(string table)
-        {
-            PlayerPrefs.SetString(TABLE_SPRITE_KEY, table);
-        }
-
-        public static string GetTable()
-        {
-            return PlayerPrefs.GetString(TABLE_SPRITE_KEY);
+            return PlayerPrefs.GetString(TABLE_SAMPLE);
         }
 
         public void TableSampleClick()
         {
             customTableCanvas.gameObject.SetActive(false);
             var chosenTable = EventSystem.current.currentSelectedGameObject.name;
-            Debug.Log(chosenTable);
+            SetTable(chosenTable);
+            
             TableChosen?.Invoke(chosenTable);
+        }
+        
+        private void Start()
+        {
+            button.onClick.AddListener(ShowDialogCanvas);
+        }
+
+        private void ShowDialogCanvas()
+        {
+            customTableCanvas.gameObject.SetActive(true);
         }
     }
 }

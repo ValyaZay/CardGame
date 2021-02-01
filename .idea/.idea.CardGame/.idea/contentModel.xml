@@ -19,9 +19,6 @@
             <e p="ScoreView.cs" t="Include" />
             <e p="TableController.cs" t="Include" />
           </e>
-          <e p="Shaders" t="Include">
-            <e p="HeaderStretch.shader" t="Include" />
-          </e>
           <e p="ValZay.CardGame.asmdef" t="Include" />
         </e>
       </e>
